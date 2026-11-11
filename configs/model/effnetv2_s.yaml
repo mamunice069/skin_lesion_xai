@@ -1,0 +1,6 @@
+# The hybrid's local branch alone ("EfficientNetV2-only" ablation).
+name: effnetv2_s
+arch: single_branch
+timm_name: tf_efficientnetv2_s.in21k_ft_in1k
+drop_rate: 0.2
+drop_path_rate: 0.1

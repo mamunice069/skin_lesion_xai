@@ -1,0 +1,25 @@
+23:38:31 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\best.pt (epoch 10); maps ['gradcam_local', 'gradcam_fused']
+23:39:04 | INFO | eval_trust | batch 1/94  gradcam 1s  stability 2s  faithfulness 30s  GPU peak 1.05 / 4.00 GiB
+23:44:27 | INFO | eval_trust | batch 11/94  gradcam 2s  stability 22s  faithfulness 331s  GPU peak 1.05 / 4.00 GiB
+23:49:51 | INFO | eval_trust | batch 21/94  gradcam 4s  stability 43s  faithfulness 632s  GPU peak 1.05 / 4.00 GiB
+23:55:16 | INFO | eval_trust | batch 31/94  gradcam 5s  stability 64s  faithfulness 933s  GPU peak 1.05 / 4.00 GiB
+00:00:40 | INFO | eval_trust | batch 41/94  gradcam 7s  stability 84s  faithfulness 1234s  GPU peak 1.05 / 4.00 GiB
+00:06:04 | INFO | eval_trust | batch 51/94  gradcam 8s  stability 105s  faithfulness 1535s  GPU peak 1.05 / 4.00 GiB
+00:11:29 | INFO | eval_trust | batch 61/94  gradcam 10s  stability 125s  faithfulness 1837s  GPU peak 1.05 / 4.00 GiB
+00:16:53 | INFO | eval_trust | batch 71/94  gradcam 11s  stability 146s  faithfulness 2138s  GPU peak 1.05 / 4.00 GiB
+00:22:17 | INFO | eval_trust | batch 81/94  gradcam 13s  stability 167s  faithfulness 2439s  GPU peak 1.05 / 4.00 GiB
+00:27:41 | INFO | eval_trust | batch 91/94  gradcam 14s  stability 188s  faithfulness 2740s  GPU peak 1.05 / 4.00 GiB
+00:30:30 | INFO | eval_trust | randomised head (head): 74s
+00:31:51 | INFO | eval_trust | randomised fusion (fusion): 81s
+00:33:11 | INFO | eval_trust | randomised grid7 (local_backbone.model.blocks.5, local_backbone.model.conv_head, local_backbone.model.bn2, global_backbone.model.layers.3, global_backbone.model.norm): 80s
+00:34:30 | INFO | eval_trust | randomised grid14 (local_backbone.model.blocks.4, local_backbone.model.blocks.3, global_backbone.model.layers.2): 79s
+00:35:48 | INFO | eval_trust | randomised grid28 (local_backbone.model.blocks.2, global_backbone.model.layers.1): 78s
+00:37:04 | INFO | eval_trust | randomised grid56 (local_backbone.model.blocks.1, global_backbone.model.layers.0): 75s
+00:38:22 | INFO | eval_trust | randomised stem (local_backbone.model.blocks.0, local_backbone.model.conv_stem, local_backbone.model.bn1, global_backbone.model.patch_embed): 78s
+00:38:22 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+00:38:22 | INFO | eval_trust | gradcam_fused     0.479     0.657    0.890     0.975    -0.060     0.294
+00:38:22 | INFO | eval_trust | gradcam_local     0.524     0.640    0.701     0.698    -0.035     0.264
+00:38:22 | INFO | eval_trust | ref_centre        0.512     0.633       -        -        -        -
+00:38:22 | INFO | eval_trust | ref_random        0.565     0.609       -        -        -        -
+00:38:22 | INFO | eval_trust | seconds: {'gradcam': 14.7, 'stability': 193.9, 'faithfulness': 2828.1, 'randomisation_head': 74.2, 'randomisation_fusion': 80.5, 'randomisation_grid7': 80.0, 'randomisation_grid14': 79.2, 'randomisation_grid28': 78.3, 'randomisation_grid56': 75.2, 'randomisation_stem': 78.0}
+00:38:22 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\trust_val

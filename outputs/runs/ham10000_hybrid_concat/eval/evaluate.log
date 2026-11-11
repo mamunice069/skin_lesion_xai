@@ -1,0 +1,2 @@
+2026-11-02 07:26:16,866 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_concat\best.pt (epoch 6, val macro_f1 0.8417)
+2026-11-02 07:27:24,598 | INFO | evaluate | test n=1503  acc 0.8603  bal_acc 0.8000  macro_f1 0.7823  auc 0.9712  mcc 0.7369 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_concat\eval

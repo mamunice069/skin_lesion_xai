@@ -1,0 +1,2 @@
+22:35:00 | INFO | train.smoke_resume_ham10000_convnext_t | train 200 / val 99 samples, 7 optimizer steps per epoch, effective batch 32, monitor macro_f1
+22:35:11 | INFO | train.smoke_resume_ham10000_convnext_t | epoch 1/2  train_loss 2.3163  val_loss 2.2024  val_macro_f1 0.2007  *best*  (10s, GPU peak 0.72 / 4.00 GiB)

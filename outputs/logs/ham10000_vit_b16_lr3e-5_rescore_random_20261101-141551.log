@@ -1,0 +1,31 @@
+14:15:57 | INFO | eval_xai | scored 64/1503 images
+14:15:59 | INFO | eval_xai | scored 128/1503 images
+14:16:02 | INFO | eval_xai | scored 192/1503 images
+14:16:04 | INFO | eval_xai | scored 256/1503 images
+14:16:07 | INFO | eval_xai | scored 320/1503 images
+14:16:09 | INFO | eval_xai | scored 384/1503 images
+14:16:12 | INFO | eval_xai | scored 448/1503 images
+14:16:14 | INFO | eval_xai | scored 512/1503 images
+14:16:15 | INFO | eval_xai | scored 576/1503 images
+14:16:17 | INFO | eval_xai | scored 640/1503 images
+14:16:18 | INFO | eval_xai | scored 704/1503 images
+14:16:19 | INFO | eval_xai | scored 768/1503 images
+14:16:20 | INFO | eval_xai | scored 832/1503 images
+14:16:22 | INFO | eval_xai | scored 896/1503 images
+14:16:23 | INFO | eval_xai | scored 960/1503 images
+14:16:24 | INFO | eval_xai | scored 1024/1503 images
+14:16:26 | INFO | eval_xai | scored 1088/1503 images
+14:16:27 | INFO | eval_xai | scored 1152/1503 images
+14:16:28 | INFO | eval_xai | scored 1216/1503 images
+14:16:30 | INFO | eval_xai | scored 1280/1503 images
+14:16:31 | INFO | eval_xai | scored 1344/1503 images
+14:16:32 | INFO | eval_xai | scored 1408/1503 images
+14:16:34 | INFO | eval_xai | scored 1472/1503 images
+14:16:34 | INFO | eval_xai | scored 1503/1503 images
+14:16:34 | INFO | eval_xai | map (all images)                    IoU   Dice IoU-AUC  boxIoU  point  E-mask  E-band  empty
+14:16:34 | INFO | eval_xai | gradcam@pred                      0.130  0.174   0.063   0.162  0.365   0.361   0.060  0.563
+14:16:34 | INFO | eval_xai | gradcam@true                      0.052  0.073   0.023   0.064  0.195   0.180   0.032  0.774
+14:16:34 | INFO | eval_xai | rollout@none                      0.418  0.545   0.407   0.544  0.504   0.414   0.131  0.000
+14:16:34 | INFO | eval_xai | ref_centre@none                   0.487  0.615   0.389   0.550  0.961   0.603   0.137  0.000
+14:16:34 | INFO | eval_xai | ref_uniform@none                  0.418  0.545   0.418   0.544    nan   0.418   0.130  0.000
+14:16:34 | INFO | eval_xai | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_lr3e-5\xai_val_random

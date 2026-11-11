@@ -1,0 +1,23 @@
+01:03:38 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\best.pt (epoch 16); maps ['gradcam']
+01:03:49 | INFO | eval_trust | batch 1/94  gradcam 0s  stability 1s  faithfulness 10s  GPU peak 0.70 / 4.00 GiB
+01:05:33 | INFO | eval_trust | batch 11/94  gradcam 1s  stability 9s  faithfulness 104s  GPU peak 0.70 / 4.00 GiB
+01:07:17 | INFO | eval_trust | batch 21/94  gradcam 2s  stability 17s  faithfulness 199s  GPU peak 0.70 / 4.00 GiB
+01:09:02 | INFO | eval_trust | batch 31/94  gradcam 2s  stability 26s  faithfulness 293s  GPU peak 0.70 / 4.00 GiB
+01:10:48 | INFO | eval_trust | batch 41/94  gradcam 3s  stability 36s  faithfulness 388s  GPU peak 0.70 / 4.00 GiB
+01:12:35 | INFO | eval_trust | batch 51/94  gradcam 4s  stability 46s  faithfulness 483s  GPU peak 0.70 / 4.00 GiB
+01:14:21 | INFO | eval_trust | batch 61/94  gradcam 4s  stability 56s  faithfulness 578s  GPU peak 0.70 / 4.00 GiB
+01:16:08 | INFO | eval_trust | batch 71/94  gradcam 5s  stability 67s  faithfulness 672s  GPU peak 0.70 / 4.00 GiB
+01:17:54 | INFO | eval_trust | batch 81/94  gradcam 6s  stability 77s  faithfulness 767s  GPU peak 0.70 / 4.00 GiB
+01:19:41 | INFO | eval_trust | batch 91/94  gradcam 6s  stability 87s  faithfulness 862s  GPU peak 0.70 / 4.00 GiB
+01:20:57 | INFO | eval_trust | randomised head (head): 45s
+01:21:42 | INFO | eval_trust | randomised grid7 (stages.3): 45s
+01:22:28 | INFO | eval_trust | randomised grid14 (stages.2): 46s
+01:23:14 | INFO | eval_trust | randomised grid28 (stages.1): 46s
+01:24:00 | INFO | eval_trust | randomised grid56 (stages.0): 46s
+01:24:44 | INFO | eval_trust | randomised stem (stem): 45s
+01:24:44 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+01:24:44 | INFO | eval_trust | gradcam           0.438     0.711    0.938     0.926    -0.010     0.268
+01:24:44 | INFO | eval_trust | ref_centre        0.514     0.695       -        -        -        -
+01:24:44 | INFO | eval_trust | ref_random        0.516     0.653       -        -        -        -
+01:24:44 | INFO | eval_trust | seconds: {'gradcam': 6.4, 'stability': 90.0, 'faithfulness': 889.5, 'randomisation_head': 45.5, 'randomisation_grid7': 45.3, 'randomisation_grid14': 45.8, 'randomisation_grid28': 45.7, 'randomisation_grid56': 45.6, 'randomisation_stem': 44.7}
+01:24:44 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\trust_test

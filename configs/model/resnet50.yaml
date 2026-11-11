@@ -1,0 +1,6 @@
+# Baseline (proposal slide 9). timm classifier as-is.
+name: resnet50
+arch: timm
+timm_name: resnet50.a1_in1k
+drop_rate: 0.2
+drop_path_rate: 0.05

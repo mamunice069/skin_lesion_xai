@@ -1,0 +1,8 @@
+12:54:16 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\best.pt (epoch 10)
+12:54:19 | INFO | explain | batch 1/94  GPU peak 0.47 / 4.00 GiB
+12:54:28 | INFO | explain | batch 21/94  GPU peak 0.47 / 4.00 GiB
+12:54:36 | INFO | explain | batch 41/94  GPU peak 0.47 / 4.00 GiB
+12:54:46 | INFO | explain | batch 61/94  GPU peak 0.47 / 4.00 GiB
+12:54:55 | INFO | explain | batch 81/94  GPU peak 0.47 / 4.00 GiB
+12:55:01 | INFO | explain | 1503 images, maps {'gradcam_local@pred': [7, 7], 'gradcam_global@pred': [7, 7], 'gradcam_fused@pred': [7, 7], 'gradcam_local@true': [7, 7], 'gradcam_global@true': [7, 7], 'gradcam_fused@true': [7, 7], 'xattn_local_to_global@none': [7, 7], 'xattn_global_to_local@none': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val\maps.npz
+12:55:14 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val\figures

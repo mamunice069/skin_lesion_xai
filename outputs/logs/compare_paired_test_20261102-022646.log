@@ -1,0 +1,30 @@
+02:26:50 | INFO | compare_xai_paired | test, n=1503, 1000 paired resamples; B - A, better = direction of a more trustworthy map
+02:26:50 | INFO | compare_xai_paired | B = ham10000_hybrid:gradcam_local  vs  A = ham10000_convnext_t:gradcam
+02:26:50 | INFO | compare_xai_paired |   deletion_auc         (lower ) A 0.4382  B 0.5270  B-A +0.0887 [+0.0786, +0.0990]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   insertion_auc        (higher) A 0.7113  B 0.6322  B-A -0.0791 [-0.0876, -0.0709]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   deletion_vs_random   (lower ) A -0.0782  B -0.0276  B-A +0.0506 [+0.0409, +0.0606]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   insertion_vs_random  (higher) A 0.0584  B 0.0315  B-A -0.0269 [-0.0342, -0.0200]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   rand_full_abs_spearman (lower ) A 0.2370  B 0.2153  B-A -0.0217 [-0.0348, -0.0085]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   rand_full_ssim       (lower ) A 0.2684  B 0.2622  B-A -0.0062 [-0.0146, +0.0022]  p 0.180  Holm 0.360
+02:26:50 | INFO | compare_xai_paired |   rand_full_abs_hog    (lower ) A 0.0824  B 0.0583  B-A -0.0241 [-0.0287, -0.0198]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   stab_spearman_mean   (higher) A 0.9382  B 0.7066  B-A -0.2316 [-0.2455, -0.2184]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   stab_ssim_mean       (higher) A 0.9256  B 0.7023  B-A -0.2233 [-0.2316, -0.2153]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   iou                  (higher) A 0.3147  B 0.4986  B-A +0.1839 [+0.1686, +0.1992]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   energy_in_mask       (higher) A 0.5248  B 0.7155  B-A +0.1907 [+0.1748, +0.2063]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   pointing             (higher) A 0.9055  B 0.8896  B-A -0.0160 [-0.0379, +0.0053]  p 0.160
+02:26:50 | INFO | compare_xai_paired |   iou_gap              (higher) A -0.0315  B 0.0836  B-A +0.1151 [+0.0755, +0.1556]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired | B = ham10000_hybrid:gradcam_fused  vs  A = ham10000_convnext_t:gradcam
+02:26:50 | INFO | compare_xai_paired |   deletion_auc         (lower ) A 0.4382  B 0.4791  B-A +0.0409 [+0.0307, +0.0513]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   insertion_auc        (higher) A 0.7113  B 0.6483  B-A -0.0630 [-0.0710, -0.0548]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   deletion_vs_random   (lower ) A -0.0782  B -0.0754  B-A +0.0027 [-0.0067, +0.0120]  p 0.640  Holm 0.640
+02:26:50 | INFO | compare_xai_paired |   insertion_vs_random  (higher) A 0.0584  B 0.0477  B-A -0.0108 [-0.0172, -0.0038]  p 0.002  Holm 0.008
+02:26:50 | INFO | compare_xai_paired |   rand_full_abs_spearman (lower ) A 0.2370  B 0.1944  B-A -0.0426 [-0.0543, -0.0300]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   rand_full_ssim       (lower ) A 0.2684  B 0.2917  B-A +0.0232 [+0.0109, +0.0352]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   rand_full_abs_hog    (lower ) A 0.0824  B 0.0569  B-A -0.0255 [-0.0298, -0.0211]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   stab_spearman_mean   (higher) A 0.9382  B 0.8916  B-A -0.0466 [-0.0529, -0.0406]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   stab_ssim_mean       (higher) A 0.9256  B 0.9751  B-A +0.0495 [+0.0470, +0.0520]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   iou                  (higher) A 0.3147  B 0.4369  B-A +0.1222 [+0.1098, +0.1327]  p 0.000  Holm 0.000
+02:26:50 | INFO | compare_xai_paired |   energy_in_mask       (higher) A 0.5248  B 0.4593  B-A -0.0655 [-0.0749, -0.0569]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   pointing             (higher) A 0.9055  B 0.8483  B-A -0.0572 [-0.0799, -0.0359]  p 0.000
+02:26:50 | INFO | compare_xai_paired |   iou_gap              (higher) A -0.0315  B -0.0712  B-A -0.0397 [-0.0802, +0.0024]  p 0.068  Holm 0.204
+02:26:50 | INFO | compare_xai_paired | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\comparisons\ham10000_xai_test_ham10000_hybrid_vs_ham10000_convnext_t.json

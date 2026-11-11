@@ -1,0 +1,6 @@
+# Baseline (proposal slide 9) and the hybrid's global branch alone ("Swin-only" ablation).
+name: swin_t
+arch: single_branch
+timm_name: swin_tiny_patch4_window7_224.ms_in22k_ft_in1k
+drop_rate: 0.2
+drop_path_rate: 0.1

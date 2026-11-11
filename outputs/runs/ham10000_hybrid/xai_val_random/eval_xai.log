@@ -1,0 +1,72 @@
+2026-11-01 12:57:17,609 | INFO | eval_xai | scored 64/1503 images
+2026-11-01 12:57:19,908 | INFO | eval_xai | scored 128/1503 images
+2026-11-01 12:57:22,238 | INFO | eval_xai | scored 192/1503 images
+2026-11-01 12:57:24,575 | INFO | eval_xai | scored 256/1503 images
+2026-11-01 12:57:26,894 | INFO | eval_xai | scored 320/1503 images
+2026-11-01 12:57:29,167 | INFO | eval_xai | scored 384/1503 images
+2026-11-01 12:57:31,449 | INFO | eval_xai | scored 448/1503 images
+2026-11-01 12:57:33,768 | INFO | eval_xai | scored 512/1503 images
+2026-11-01 12:57:36,071 | INFO | eval_xai | scored 576/1503 images
+2026-11-01 12:57:38,317 | INFO | eval_xai | scored 640/1503 images
+2026-11-01 12:57:40,614 | INFO | eval_xai | scored 704/1503 images
+2026-11-01 12:57:42,964 | INFO | eval_xai | scored 768/1503 images
+2026-11-01 12:57:45,345 | INFO | eval_xai | scored 832/1503 images
+2026-11-01 12:57:47,670 | INFO | eval_xai | scored 896/1503 images
+2026-11-01 12:57:49,942 | INFO | eval_xai | scored 960/1503 images
+2026-11-01 12:57:52,228 | INFO | eval_xai | scored 1024/1503 images
+2026-11-01 12:57:54,468 | INFO | eval_xai | scored 1088/1503 images
+2026-11-01 12:57:56,752 | INFO | eval_xai | scored 1152/1503 images
+2026-11-01 12:57:59,041 | INFO | eval_xai | scored 1216/1503 images
+2026-11-01 12:58:01,320 | INFO | eval_xai | scored 1280/1503 images
+2026-11-01 12:58:03,567 | INFO | eval_xai | scored 1344/1503 images
+2026-11-01 12:58:05,836 | INFO | eval_xai | scored 1408/1503 images
+2026-11-01 12:58:08,179 | INFO | eval_xai | scored 1472/1503 images
+2026-11-01 12:58:09,295 | INFO | eval_xai | scored 1503/1503 images
+2026-11-01 12:58:09,543 | INFO | eval_xai | map (all images)                    IoU   Dice IoU-AUC  boxIoU  point  E-mask  E-band
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_local@pred                0.223  0.335   0.101   0.369  0.402   0.388   0.122
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_global@pred               0.285  0.401   0.141   0.436  0.598   0.446   0.138
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_fused@pred                0.418  0.545   0.366   0.544  0.808   0.461   0.125
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_local@true                0.223  0.345   0.101   0.353  0.406   0.386   0.141
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_global@true               0.446  0.585   0.215   0.567  0.768   0.623   0.174
+2026-11-01 12:58:09,543 | INFO | eval_xai | gradcam_fused@true                0.111  0.143   0.082   0.146  0.212   0.541   0.159
+2026-11-01 12:58:09,543 | INFO | eval_xai | xattn_local_to_global@none        0.418  0.545   0.409   0.544  0.589   0.417   0.130
+2026-11-01 12:58:09,543 | INFO | eval_xai | xattn_global_to_local@none        0.418  0.545   0.404   0.544  0.275   0.418   0.130
+2026-11-01 12:58:09,543 | INFO | eval_xai | ref_centre@none                   0.487  0.615   0.389   0.550  0.961   0.603   0.137
+2026-11-01 12:58:09,543 | INFO | eval_xai | ref_uniform@none                  0.418  0.545   0.418   0.544    nan   0.418   0.130
+2026-11-01 12:58:09,543 | INFO | eval_xai | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val_random
+2026-11-01 14:18:26,945 | INFO | eval_xai | scored 64/1503 images
+2026-11-01 14:18:30,957 | INFO | eval_xai | scored 128/1503 images
+2026-11-01 14:18:35,114 | INFO | eval_xai | scored 192/1503 images
+2026-11-01 14:18:39,390 | INFO | eval_xai | scored 256/1503 images
+2026-11-01 14:18:43,732 | INFO | eval_xai | scored 320/1503 images
+2026-11-01 14:18:47,902 | INFO | eval_xai | scored 384/1503 images
+2026-11-01 14:18:51,820 | INFO | eval_xai | scored 448/1503 images
+2026-11-01 14:18:55,945 | INFO | eval_xai | scored 512/1503 images
+2026-11-01 14:19:00,201 | INFO | eval_xai | scored 576/1503 images
+2026-11-01 14:19:04,322 | INFO | eval_xai | scored 640/1503 images
+2026-11-01 14:19:08,418 | INFO | eval_xai | scored 704/1503 images
+2026-11-01 14:19:12,517 | INFO | eval_xai | scored 768/1503 images
+2026-11-01 14:19:16,605 | INFO | eval_xai | scored 832/1503 images
+2026-11-01 14:19:20,541 | INFO | eval_xai | scored 896/1503 images
+2026-11-01 14:19:24,578 | INFO | eval_xai | scored 960/1503 images
+2026-11-01 14:19:28,562 | INFO | eval_xai | scored 1024/1503 images
+2026-11-01 14:19:32,531 | INFO | eval_xai | scored 1088/1503 images
+2026-11-01 14:19:36,506 | INFO | eval_xai | scored 1152/1503 images
+2026-11-01 14:19:40,603 | INFO | eval_xai | scored 1216/1503 images
+2026-11-01 14:19:44,595 | INFO | eval_xai | scored 1280/1503 images
+2026-11-01 14:19:48,564 | INFO | eval_xai | scored 1344/1503 images
+2026-11-01 14:19:52,506 | INFO | eval_xai | scored 1408/1503 images
+2026-11-01 14:19:56,588 | INFO | eval_xai | scored 1472/1503 images
+2026-11-01 14:19:58,620 | INFO | eval_xai | scored 1503/1503 images
+2026-11-01 14:19:59,082 | INFO | eval_xai | map (all images)                    IoU   Dice IoU-AUC  boxIoU  point  E-mask  E-band  empty
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_local@pred                0.223  0.335   0.101   0.369  0.402   0.388   0.122  0.000
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_global@pred               0.285  0.401   0.141   0.436  0.598   0.443   0.137  0.005
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_fused@pred                0.418  0.545   0.366   0.544  0.808   0.461   0.125  0.000
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_local@true                0.223  0.345   0.101   0.353  0.406   0.386   0.141  0.000
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_global@true               0.446  0.585   0.215   0.567  0.768   0.613   0.171  0.015
+2026-11-01 14:19:59,082 | INFO | eval_xai | gradcam_fused@true                0.111  0.143   0.082   0.146  0.212   0.150   0.044  0.722
+2026-11-01 14:19:59,082 | INFO | eval_xai | xattn_local_to_global@none        0.418  0.545   0.409   0.544  0.589   0.417   0.130  0.000
+2026-11-01 14:19:59,082 | INFO | eval_xai | xattn_global_to_local@none        0.418  0.545   0.404   0.544  0.275   0.418   0.130  0.000
+2026-11-01 14:19:59,098 | INFO | eval_xai | ref_centre@none                   0.487  0.615   0.389   0.550  0.961   0.603   0.137  0.000
+2026-11-01 14:19:59,098 | INFO | eval_xai | ref_uniform@none                  0.418  0.545   0.418   0.544    nan   0.418   0.130  0.000
+2026-11-01 14:19:59,098 | INFO | eval_xai | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val_random

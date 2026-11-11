@@ -1,0 +1,28 @@
+# HAM10000, 7-class. Raw-data paths are relative to `data_root`;
+# `data_root` itself is relative to the skin_lesion_xai/ folder (".." = Deep_learning/).
+# Generated files (split_csv, hair_removed_dir) are relative to skin_lesion_xai/.
+name: ham10000
+task: multiclass
+data_root: ..
+image_dir: ISIC/diagnosis_confirm_type          # original 600x450 JPGs
+metadata_csv: datasets/ham10000_extra/HAM10000_metadata.csv
+mask_dir: datasets/ham10000_extra/masks         # Tschandl lesion segmentations, 600x450
+mask_suffix: _segmentation.png
+image_ext: .jpg
+
+id_col: image_id
+label_col: dx
+group_col: lesion_id                            # split by lesion: no lesion in two splits
+classes: [akiec, bcc, bkl, df, mel, nv, vasc]   # fixed order = label index
+
+split_csv: data/splits/ham10000.csv
+split_ratios: {train: 0.70, val: 0.15, test: 0.15}
+split_folds: 20                                 # ratios must be multiples of 1/split_folds
+seed: 42
+
+hair_removed_dir: data/processed/ham10000_dullrazor
+use_hair_removal: false
+# Tuned on the first 50 split images: threshold 12 + long/thin shape check + 1 px dilation.
+dullrazor: {kernel_size: 17, threshold: 12, min_length_frac: 0.08, min_elongation: 8.0, dilate: 1, inpaint_radius: 3}
+
+image_size: 224

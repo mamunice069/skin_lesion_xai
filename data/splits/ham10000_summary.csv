@@ -1,0 +1,10 @@
+label_name,train,val,test
+akiec,228,50,49
+bcc,359,77,78
+bkl,769,165,165
+df,80,18,17
+mel,779,166,168
+nv,4694,1006,1005
+vasc,100,21,21
+total images,7009,1503,1503
+groups (lesions/patients),5230,1122,1118

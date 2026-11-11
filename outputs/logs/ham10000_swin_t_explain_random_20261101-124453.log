@@ -1,0 +1,8 @@
+12:45:01 | INFO | explain | random weights (no checkpoint loaded)
+12:45:03 | INFO | explain | batch 1/94  GPU peak 0.35 / 4.00 GiB
+12:45:07 | INFO | explain | batch 21/94  GPU peak 0.36 / 4.00 GiB
+12:45:12 | INFO | explain | batch 41/94  GPU peak 0.36 / 4.00 GiB
+12:45:16 | INFO | explain | batch 61/94  GPU peak 0.36 / 4.00 GiB
+12:45:20 | INFO | explain | batch 81/94  GPU peak 0.36 / 4.00 GiB
+12:45:23 | INFO | explain | 1503 images, maps {'gradcam@pred': [7, 7], 'gradcam@true': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_swin_t\xai_val_random\maps.npz
+12:45:28 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_swin_t\xai_val_random\figures

@@ -1,0 +1,16 @@
+21:16:25 | INFO | train.ham10000_hybrid_concat | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+21:24:58 | INFO | train.ham10000_hybrid_concat | epoch 1/30  train_loss 1.7878  val_loss 1.5697  val_macro_f1 0.6358  *best*  (510s, GPU peak 1.15 / 4.00 GiB)
+21:33:12 | INFO | train.ham10000_hybrid_concat | epoch 2/30  train_loss 1.5023  val_loss 1.4790  val_macro_f1 0.7516  *best*  (492s, GPU peak 1.15 / 4.00 GiB)
+21:41:28 | INFO | train.ham10000_hybrid_concat | epoch 3/30  train_loss 1.4354  val_loss 1.4563  val_macro_f1 0.7821  *best*  (494s, GPU peak 1.15 / 4.00 GiB)
+21:49:40 | INFO | train.ham10000_hybrid_concat | epoch 4/30  train_loss 1.3649  val_loss 1.4359  val_macro_f1 0.7931  *best*  (491s, GPU peak 1.15 / 4.00 GiB)
+21:57:29 | INFO | train.ham10000_hybrid_concat | epoch 5/30  train_loss 1.3038  val_loss 1.4251  val_macro_f1 0.8077  *best*  (468s, GPU peak 1.15 / 4.00 GiB)
+22:02:06 | INFO | train.ham10000_hybrid_concat | epoch 6/30  train_loss 1.2488  val_loss 1.4199  val_macro_f1 0.8417  *best*  (276s, GPU peak 1.15 / 4.00 GiB)
+22:07:04 | INFO | train.ham10000_hybrid_concat | epoch 7/30  train_loss 1.2254  val_loss 1.4161  val_macro_f1 0.8182  (297s, GPU peak 1.15 / 4.00 GiB)
+22:12:01 | INFO | train.ham10000_hybrid_concat | epoch 8/30  train_loss 1.1932  val_loss 1.4212  val_macro_f1 0.8280  (295s, GPU peak 1.15 / 4.00 GiB)
+05:07:51 | INFO | train.ham10000_hybrid_concat | epoch 9/30  train_loss 1.1587  val_loss 1.4205  val_macro_f1 0.8397  (24948s, GPU peak 1.15 / 4.00 GiB)
+05:16:15 | INFO | train.ham10000_hybrid_concat | epoch 10/30  train_loss 1.1456  val_loss 1.4160  val_macro_f1 0.8408  (503s, GPU peak 1.15 / 4.00 GiB)
+05:25:11 | INFO | train.ham10000_hybrid_concat | epoch 11/30  train_loss 1.1150  val_loss 1.4178  val_macro_f1 0.8394  (535s, GPU peak 1.15 / 4.00 GiB)
+05:33:37 | INFO | train.ham10000_hybrid_concat | epoch 12/30  train_loss 1.0989  val_loss 1.4246  val_macro_f1 0.8236  (504s, GPU peak 1.15 / 4.00 GiB)
+05:41:54 | INFO | train.ham10000_hybrid_concat | epoch 13/30  train_loss 1.0803  val_loss 1.4330  val_macro_f1 0.8249  (496s, GPU peak 1.15 / 4.00 GiB)
+05:41:54 | INFO | train.ham10000_hybrid_concat | early stopping: no improvement for 7 epochs
+05:41:54 | INFO | train.ham10000_hybrid_concat | done: {'best_epoch': 6, 'best_val_score': 0.8417276792644565, 'monitor': 'macro_f1', 'epochs_run': 13}

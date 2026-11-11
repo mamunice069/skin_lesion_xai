@@ -1,0 +1,11 @@
+2026-11-02 12:33:45,047 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_mask_l1_m0\best.pt (epoch 1); method gradcam, maps ['gradcam_local', 'gradcam_fused']
+2026-11-02 12:34:17,940 | INFO | eval_trust | batch 1/19  maps 1s  stability 2s  faithfulness 30s  GPU peak 1.05 / 4.00 GiB
+2026-11-02 12:39:40,475 | INFO | eval_trust | batch 11/19  maps 4s  stability 19s  faithfulness 331s  GPU peak 1.05 / 4.00 GiB
+2026-11-02 12:44:06,311 | INFO | eval_trust | randomised full (head, fusion, local_backbone.model.blocks.5, local_backbone.model.conv_head, local_backbone.model.bn2, global_backbone.model.layers.3, global_backbone.model.norm, local_backbone.model.blocks.4, local_backbone.model.blocks.3, global_backbone.model.layers.2, local_backbone.model.blocks.2, global_backbone.model.layers.1, local_backbone.model.blocks.1, global_backbone.model.layers.0, local_backbone.model.blocks.0, local_backbone.model.conv_stem, local_backbone.model.bn1, global_backbone.model.patch_embed): 16s
+2026-11-02 12:44:06,375 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+2026-11-02 12:44:06,375 | INFO | eval_trust | gradcam_fused     0.520     0.634    0.846     0.938    -0.089     0.328
+2026-11-02 12:44:06,375 | INFO | eval_trust | gradcam_local     0.524     0.629    0.611     0.650    -0.041     0.279
+2026-11-02 12:44:06,375 | INFO | eval_trust | ref_centre        0.519     0.618       -        -        -        -
+2026-11-02 12:44:06,375 | INFO | eval_trust | ref_random        0.564     0.593       -        -        -        -
+2026-11-02 12:44:06,375 | INFO | eval_trust | seconds: {'maps': 5.9, 'stability': 33.1, 'faithfulness': 564.6, 'randomisation_full': 15.7}
+2026-11-02 12:44:06,375 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_mask_l1_m0\trust_val_screen300

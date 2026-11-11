@@ -1,0 +1,5 @@
+2026-11-02 10:25:19,010 | INFO | train.smoke_ham10000_hybrid_mask | fine-tuning ham10000_hybrid (epoch 10) with lam 0.3, mu 0.1
+2026-11-02 10:25:19,010 | INFO | train.smoke_ham10000_hybrid_mask | train 64 / val 64 samples, 2 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-11-02 10:25:33,587 | INFO | train.smoke_ham10000_hybrid_mask | loss terms (epoch means): ce 1.0258  mask 0.6365  consistency 0.0498
+2026-11-02 10:25:35,915 | INFO | train.smoke_ham10000_hybrid_mask | epoch 1/1  train_loss 1.2217  val_loss 1.1136  val_macro_f1 0.9017  *best*  (16s, GPU peak 1.52 / 4.00 GiB)
+2026-11-02 10:25:35,917 | INFO | train.smoke_ham10000_hybrid_mask | done: {'best_epoch': 1, 'best_val_score': 0.90172068827531, 'monitor': 'macro_f1', 'epochs_run': 1}

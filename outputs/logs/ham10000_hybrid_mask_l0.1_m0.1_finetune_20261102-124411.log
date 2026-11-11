@@ -1,0 +1,13 @@
+12:44:28 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | fine-tuning ham10000_hybrid (epoch 10) with lam 0.1, mu 0.1
+12:44:28 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+12:54:18 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | loss terms (epoch means): ce 1.0900  mask 0.6313  consistency 0.0428
+12:54:53 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | epoch 1/5  train_loss 1.1574  val_loss 1.4420  val_macro_f1 0.7935  *best*  (624s, GPU peak 1.52 / 4.00 GiB)
+13:03:59 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | loss terms (epoch means): ce 1.0708  mask 0.5730  consistency 0.0445
+13:04:32 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | epoch 2/5  train_loss 1.1325  val_loss 1.4544  val_macro_f1 0.7971  *best*  (577s, GPU peak 1.51 / 4.00 GiB)
+13:13:59 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | loss terms (epoch means): ce 1.0612  mask 0.4340  consistency 0.0531
+13:14:33 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | epoch 3/5  train_loss 1.1099  val_loss 1.4637  val_macro_f1 0.8102  *best*  (600s, GPU peak 1.51 / 4.00 GiB)
+13:23:36 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | loss terms (epoch means): ce 1.0712  mask 0.3472  consistency 0.0581
+13:24:11 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | epoch 4/5  train_loss 1.1118  val_loss 1.4619  val_macro_f1 0.8090  (576s, GPU peak 1.51 / 4.00 GiB)
+13:33:13 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | loss terms (epoch means): ce 1.0558  mask 0.3293  consistency 0.0580
+13:33:47 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | epoch 5/5  train_loss 1.0946  val_loss 1.4624  val_macro_f1 0.8071  (575s, GPU peak 1.51 / 4.00 GiB)
+13:33:47 | INFO | train.ham10000_hybrid_mask_l0.1_m0.1 | done: {'best_epoch': 3, 'best_val_score': 0.8102262476622654, 'monitor': 'macro_f1', 'epochs_run': 5}

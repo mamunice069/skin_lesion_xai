@@ -1,0 +1,8 @@
+# RTX 3050 Laptop (4 GB VRAM), 7.3 GB system RAM: small batches, gradient checkpointing.
+# On Windows each DataLoader worker is a separate process that loads all of torch + CUDA
+# (~1.8 GB committed memory each), so: 1 train worker, val/test loaded in the main process.
+batch_size: 8
+accum_steps: 4                 # effective batch 32
+num_workers: 1
+val_num_workers: 0
+grad_checkpointing: true

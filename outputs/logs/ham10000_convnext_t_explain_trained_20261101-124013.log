@@ -1,0 +1,8 @@
+12:40:22 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\best.pt (epoch 16)
+12:40:23 | INFO | explain | batch 1/94  GPU peak 0.32 / 4.00 GiB
+12:40:27 | INFO | explain | batch 21/94  GPU peak 0.33 / 4.00 GiB
+12:40:32 | INFO | explain | batch 41/94  GPU peak 0.33 / 4.00 GiB
+12:40:36 | INFO | explain | batch 61/94  GPU peak 0.33 / 4.00 GiB
+12:40:40 | INFO | explain | batch 81/94  GPU peak 0.33 / 4.00 GiB
+12:40:42 | INFO | explain | 1503 images, maps {'gradcam@pred': [7, 7], 'gradcam@true': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\xai_val\maps.npz
+12:40:47 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\xai_val\figures

@@ -1,0 +1,2 @@
+23:04:03 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_effnetv2_s\best.pt (epoch 1, val macro_f1 0.1153)
+23:04:08 | INFO | evaluate | test n=99  acc 0.6768  bal_acc 0.1429  macro_f1 0.1153  auc 0.6810  mcc 0.0000 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_effnetv2_s\eval

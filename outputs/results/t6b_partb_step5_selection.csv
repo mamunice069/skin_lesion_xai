@@ -1,0 +1,7 @@
+Stage,Run,Val macro-F1,Eligible,Screen insertion_vs_random,Screen stab_spearman_mean,Screen IoU,Chosen
+source,ham10000_hybrid,0.8389,—,0.047,0.896,0.410,
+lambda,ham10000_hybrid_mask_l0.1_m0,0.8367,yes,0.049,0.955,0.518,final
+lambda,ham10000_hybrid_mask_l0.3_m0,0.8257,no,0.045,0.941,0.196,
+lambda,ham10000_hybrid_mask_l1_m0,0.8166,no,0.041,0.846,0.263,
+consistency,ham10000_hybrid_mask_l0.1_m0.1,0.8102,no,0.059,0.955,0.559,
+consistency,ham10000_hybrid_mask_l0.1_m1,0.8143,no,0.036,0.928,0.406,

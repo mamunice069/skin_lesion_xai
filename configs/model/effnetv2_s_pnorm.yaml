@@ -1,0 +1,8 @@
+# effnetv2_s.yaml with the checkpoint's own input normalisation (mean = std = 0.5), as in the hybrid's
+# local branch. The "EfficientNetV2-only" ablation the hybrid is compared against.
+name: effnetv2_s_pnorm
+arch: single_branch
+timm_name: tf_efficientnetv2_s.in21k_ft_in1k
+match_pretrained_norm: true
+drop_rate: 0.2
+drop_path_rate: 0.1

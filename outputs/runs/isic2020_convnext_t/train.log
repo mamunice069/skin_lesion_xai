@@ -1,0 +1,18 @@
+2026-11-01 09:27:43,202 | INFO | train.isic2020_convnext_t | train 23190 / val 4969 samples, 724 optimizer steps per epoch, effective batch 32, monitor auc
+2026-11-01 10:13:04,538 | INFO | train.isic2020_convnext_t | epoch 1/30  train_loss 0.8418  val_loss 0.8135  val_auc 0.8457  *best*  (2721s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:15:10,383 | INFO | train.isic2020_convnext_t | epoch 2/30  train_loss 0.8208  val_loss 0.8099  val_auc 0.8635  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:17:16,113 | INFO | train.isic2020_convnext_t | epoch 3/30  train_loss 0.8198  val_loss 0.8104  val_auc 0.8685  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:19:21,704 | INFO | train.isic2020_convnext_t | epoch 4/30  train_loss 0.8163  val_loss 0.8051  val_auc 0.8926  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:21:27,127 | INFO | train.isic2020_convnext_t | epoch 5/30  train_loss 0.8126  val_loss 0.8041  val_auc 0.8887  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:23:32,644 | INFO | train.isic2020_convnext_t | epoch 6/30  train_loss 0.8096  val_loss 0.8027  val_auc 0.8966  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:25:38,640 | INFO | train.isic2020_convnext_t | epoch 7/30  train_loss 0.8077  val_loss 0.7993  val_auc 0.9020  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:27:44,298 | INFO | train.isic2020_convnext_t | epoch 8/30  train_loss 0.8035  val_loss 0.8003  val_auc 0.9085  *best*  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:29:49,918 | INFO | train.isic2020_convnext_t | epoch 9/30  train_loss 0.7981  val_loss 0.7986  val_auc 0.9015  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:31:55,752 | INFO | train.isic2020_convnext_t | epoch 10/30  train_loss 0.7960  val_loss 0.7981  val_auc 0.8981  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:34:01,482 | INFO | train.isic2020_convnext_t | epoch 11/30  train_loss 0.7918  val_loss 0.7986  val_auc 0.8888  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:36:06,994 | INFO | train.isic2020_convnext_t | epoch 12/30  train_loss 0.7869  val_loss 0.8021  val_auc 0.8939  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:38:12,378 | INFO | train.isic2020_convnext_t | epoch 13/30  train_loss 0.7850  val_loss 0.8009  val_auc 0.8921  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:40:17,637 | INFO | train.isic2020_convnext_t | epoch 14/30  train_loss 0.7751  val_loss 0.8011  val_auc 0.8824  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:42:23,304 | INFO | train.isic2020_convnext_t | epoch 15/30  train_loss 0.7747  val_loss 0.8023  val_auc 0.8816  (125s, GPU peak 2.37 / 14.56 GiB)
+2026-11-01 10:42:23,304 | INFO | train.isic2020_convnext_t | early stopping: no improvement for 7 epochs
+2026-11-01 10:42:23,305 | INFO | train.isic2020_convnext_t | done: {'best_epoch': 8, 'best_val_score': 0.9085239232084081, 'monitor': 'auc', 'epochs_run': 15}

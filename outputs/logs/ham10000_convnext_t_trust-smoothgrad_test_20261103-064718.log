@@ -1,0 +1,18 @@
+06:47:32 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\best.pt (epoch 16); method smoothgrad, maps ['gradcam']
+06:48:12 | INFO | eval_trust | batch 1/94  maps 6s  stability 21s  faithfulness 14s  GPU peak 0.70 / 4.00 GiB
+07:02:01 | INFO | eval_trust | batch 11/94  maps 49s  stability 193s  faithfulness 626s  GPU peak 0.70 / 4.00 GiB
+07:06:27 | INFO | eval_trust | batch 21/94  maps 82s  stability 330s  faithfulness 721s  GPU peak 0.70 / 4.00 GiB
+07:10:54 | INFO | eval_trust | batch 31/94  maps 115s  stability 467s  faithfulness 816s  GPU peak 0.70 / 4.00 GiB
+07:15:20 | INFO | eval_trust | batch 41/94  maps 148s  stability 604s  faithfulness 911s  GPU peak 0.70 / 4.00 GiB
+07:19:47 | INFO | eval_trust | batch 51/94  maps 181s  stability 742s  faithfulness 1006s  GPU peak 0.70 / 4.00 GiB
+07:24:14 | INFO | eval_trust | batch 61/94  maps 214s  stability 879s  faithfulness 1101s  GPU peak 0.70 / 4.00 GiB
+07:28:41 | INFO | eval_trust | batch 71/94  maps 247s  stability 1017s  faithfulness 1197s  GPU peak 0.70 / 4.00 GiB
+07:33:07 | INFO | eval_trust | batch 81/94  maps 280s  stability 1154s  faithfulness 1292s  GPU peak 0.70 / 4.00 GiB
+07:37:34 | INFO | eval_trust | batch 91/94  maps 313s  stability 1291s  faithfulness 1387s  GPU peak 0.70 / 4.00 GiB
+07:44:37 | INFO | eval_trust | randomised full (head, stages.3, stages.2, stages.1, stages.0, stem): 345s
+07:44:37 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+07:44:37 | INFO | eval_trust | gradcam           0.464     0.682    0.976     0.970     0.116     0.419
+07:44:37 | INFO | eval_trust | ref_centre        0.514     0.695       -        -        -        -
+07:44:37 | INFO | eval_trust | ref_random        0.516     0.653       -        -        -        -
+07:44:37 | INFO | eval_trust | seconds: {'maps': 322.5, 'stability': 1331.6, 'faithfulness': 1414.9, 'randomisation_full': 344.7}
+07:44:37 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\trust_test_smoothgrad

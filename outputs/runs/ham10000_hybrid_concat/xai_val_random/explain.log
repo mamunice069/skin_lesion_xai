@@ -1,0 +1,8 @@
+2026-11-01 12:59:47,399 | INFO | explain | random weights (no checkpoint loaded)
+2026-11-01 12:59:48,843 | INFO | explain | batch 1/94  GPU peak 0.43 / 4.00 GiB
+2026-11-01 12:59:53,293 | INFO | explain | batch 21/94  GPU peak 0.44 / 4.00 GiB
+2026-11-01 12:59:57,412 | INFO | explain | batch 41/94  GPU peak 0.44 / 4.00 GiB
+2026-11-01 13:00:01,479 | INFO | explain | batch 61/94  GPU peak 0.44 / 4.00 GiB
+2026-11-01 13:00:05,539 | INFO | explain | batch 81/94  GPU peak 0.44 / 4.00 GiB
+2026-11-01 13:00:08,220 | INFO | explain | 1503 images, maps {'gradcam_local@pred': [7, 7], 'gradcam_global@pred': [7, 7], 'gradcam_fused@pred': [7, 7], 'gradcam_local@true': [7, 7], 'gradcam_global@true': [7, 7], 'gradcam_fused@true': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_concat\xai_val_random\maps.npz
+2026-11-01 13:00:13,092 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid_concat\xai_val_random\figures

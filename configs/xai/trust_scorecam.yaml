@@ -1,0 +1,27 @@
+# Part B (EXPLORATORY): Score-CAM trust metrics (scripts/eval_trust.py, scripts/compare_xai_paired.py).
+# Every M4 setting is copied unchanged from configs/xai/trust.yaml; only the method block below is new.
+# Frozen 2026-11-02 before the val run (docs/report_notes.md, "Part B"); not changed after the test run.
+maps:
+  convnext_t: [gradcam]
+  hybrid: [gradcam_local, gradcam_fused]
+steps: 50
+blur_kernel: 11
+blur_sigma: 5.0
+random_grid: 7
+centre_sigma: 0.25
+noise_std: 0.03
+brightness: [0.9, 1.1]
+stability_unchanged_only: true
+hog_pixels_per_cell: 16
+seed: 0
+batch_size: 16
+forward_batch: 64          # masked images per forward pass (Score-CAM channels and deletion / insertion steps)
+n_boot: 1000
+primary: [deletion_vs_random, insertion_vs_random, rand_full_ssim, stab_spearman_mean, iou, iou_gap]
+
+# method (xai/cam_variants.py): one masked forward pass per channel (ConvNeXt-T 768, hybrid local 1,280,
+# hybrid fused 2 x 384), so only a fixed stratified subset of 150 images per split is affordable on the 4 GB GPU
+method: scorecam
+randomisation: full        # every cascade block re-initialised in one step (= the cascade's end state)
+max_samples: 150           # stratified by class, seeded by the run's seed (42 for both runs: the same images)
+localisation: true         # IoU / energy in mask / pointing with the configs/xai/default.yaml protocol

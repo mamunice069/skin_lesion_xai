@@ -1,0 +1,2 @@
+2026-10-28 23:24:22,376 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_isic2020_effnetv2_s\best.pt (epoch 1, val auc 0.5510)
+2026-10-28 23:24:26,945 | INFO | evaluate | test n=100  acc 0.9800  bal_acc 0.5000  macro_f1 0.4949  auc 0.2449  mcc 0.0000 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_isic2020_effnetv2_s\eval

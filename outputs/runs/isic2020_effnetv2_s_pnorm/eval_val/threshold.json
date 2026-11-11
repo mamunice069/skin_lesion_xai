@@ -1,0 +1,101 @@
+{
+  "run": "isic2020_effnetv2_s_pnorm",
+  "checkpoint_epoch": 5,
+  "source": "eval_val/predictions_val.csv",
+  "source_sha256": "03d555ded9f4a4a77e47caa9edab7348640cc8e37c2aa3655d5fd1522a08bd06",
+  "created": "2026-11-03T17:09:16",
+  "rule": "predict melanoma when p_melanoma >= threshold",
+  "min_sensitivity": 0.8,
+  "thresholds": {
+    "youden": {
+      "threshold": 0.31090355,
+      "n_predicted_positive": 1334,
+      "val": {
+        "n": 4969,
+        "threshold": 0.31090355,
+        "accuracy": 0.7450191185349165,
+        "balanced_accuracy": 0.8137905135920365,
+        "macro_f1": 0.47980654165444825,
+        "weighted_f1": 0.8382322198229503,
+        "macro_precision": 0.5274850538967105,
+        "macro_sensitivity": 0.8137905135920365,
+        "macro_specificity": 0.8137905135920365,
+        "mcc": 0.18573690186232347,
+        "kappa": 0.07806751168171766,
+        "auc": 0.8851728375877609,
+        "average_precision": 0.23122770760325817,
+        "per_class": {
+          "benign": {
+            "sensitivity": 0.7425235559197051,
+            "specificity": 0.8850574712643678,
+            "f1": 0.8512386990724433,
+            "support": 4882
+          },
+          "melanoma": {
+            "sensitivity": 0.8850574712643678,
+            "specificity": 0.7425235559197051,
+            "f1": 0.10837438423645321,
+            "support": 87
+          }
+        },
+        "confusion_matrix": [
+          [
+            3625,
+            1257
+          ],
+          [
+            10,
+            77
+          ]
+        ],
+        "sensitivity": 0.8850574712643678,
+        "specificity": 0.7425235559197051
+      }
+    },
+    "sensitivity_0.80": {
+      "threshold": 0.322206,
+      "n_predicted_positive": 982,
+      "val": {
+        "n": 4969,
+        "threshold": 0.322206,
+        "accuracy": 0.8130408532904004,
+        "balanced_accuracy": 0.8088945080921235,
+        "macro_f1": 0.5131083230908765,
+        "weighted_f1": 0.8818715236823425,
+        "macro_precision": 0.5335096190930095,
+        "macro_sensitivity": 0.8088945080921235,
+        "macro_specificity": 0.8088945080921235,
+        "mcc": 0.2034791125014025,
+        "kappa": 0.10207989001346618,
+        "auc": 0.8851728375877609,
+        "average_precision": 0.23122770760325817,
+        "per_class": {
+          "benign": {
+            "sensitivity": 0.8131913150348218,
+            "specificity": 0.8045977011494253,
+            "f1": 0.8952531288758597,
+            "support": 4882
+          },
+          "melanoma": {
+            "sensitivity": 0.8045977011494253,
+            "specificity": 0.8131913150348218,
+            "f1": 0.13096351730589337,
+            "support": 87
+          }
+        },
+        "confusion_matrix": [
+          [
+            3970,
+            912
+          ],
+          [
+            17,
+            70
+          ]
+        ],
+        "sensitivity": 0.8045977011494253,
+        "specificity": 0.8131913150348218
+      }
+    }
+  }
+}

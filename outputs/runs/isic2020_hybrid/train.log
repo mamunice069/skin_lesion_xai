@@ -1,0 +1,17 @@
+2026-11-01 10:48:54,648 | INFO | train.isic2020_hybrid | train 23190 / val 4969 samples, 724 optimizer steps per epoch, effective batch 32, monitor auc
+2026-11-01 11:16:03,456 | INFO | train.isic2020_hybrid | epoch 1/30  train_loss 0.8251  val_loss 0.8178  val_auc 0.8686  *best*  (1628s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:21:22,243 | INFO | train.isic2020_hybrid | epoch 2/30  train_loss 0.8207  val_loss 0.8075  val_auc 0.8826  *best*  (317s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:26:39,267 | INFO | train.isic2020_hybrid | epoch 3/30  train_loss 0.8180  val_loss 0.8081  val_auc 0.8788  (316s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:31:56,167 | INFO | train.isic2020_hybrid | epoch 4/30  train_loss 0.8141  val_loss 0.8075  val_auc 0.8858  *best*  (315s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:37:12,266 | INFO | train.isic2020_hybrid | epoch 5/30  train_loss 0.8126  val_loss 0.8022  val_auc 0.9090  *best*  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:42:27,607 | INFO | train.isic2020_hybrid | epoch 6/30  train_loss 0.8031  val_loss 0.8007  val_auc 0.8953  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:47:43,362 | INFO | train.isic2020_hybrid | epoch 7/30  train_loss 0.7973  val_loss 0.7922  val_auc 0.9118  *best*  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:52:59,018 | INFO | train.isic2020_hybrid | epoch 8/30  train_loss 0.7909  val_loss 0.7966  val_auc 0.9052  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 11:58:14,284 | INFO | train.isic2020_hybrid | epoch 9/30  train_loss 0.7821  val_loss 0.7943  val_auc 0.8954  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:03:29,781 | INFO | train.isic2020_hybrid | epoch 10/30  train_loss 0.7782  val_loss 0.7936  val_auc 0.8933  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:08:44,959 | INFO | train.isic2020_hybrid | epoch 11/30  train_loss 0.7706  val_loss 0.7977  val_auc 0.8765  (314s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:13:58,093 | INFO | train.isic2020_hybrid | epoch 12/30  train_loss 0.7677  val_loss 0.7955  val_auc 0.8694  (312s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:19:12,047 | INFO | train.isic2020_hybrid | epoch 13/30  train_loss 0.7615  val_loss 0.7978  val_auc 0.8593  (312s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:24:24,989 | INFO | train.isic2020_hybrid | epoch 14/30  train_loss 0.7530  val_loss 0.7979  val_auc 0.8679  (312s, GPU peak 5.51 / 14.56 GiB)
+2026-11-01 12:24:24,990 | INFO | train.isic2020_hybrid | early stopping: no improvement for 7 epochs
+2026-11-01 12:24:24,991 | INFO | train.isic2020_hybrid | done: {'best_epoch': 7, 'best_val_score': 0.9118012685586743, 'monitor': 'auc', 'epochs_run': 14}

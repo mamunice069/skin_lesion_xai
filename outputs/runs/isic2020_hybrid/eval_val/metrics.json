@@ -1,0 +1,46 @@
+{
+  "run": "isic2020_hybrid",
+  "smoke": false,
+  "checkpoint_epoch": 7,
+  "val": {
+    "n": 4969,
+    "threshold": null,
+    "accuracy": 0.9800764741396659,
+    "balanced_accuracy": 0.6794016961203954,
+    "macro_f1": 0.6912550797859821,
+    "weighted_f1": 0.9794154180976578,
+    "macro_precision": 0.7049060419288564,
+    "macro_sensitivity": 0.6794016961203954,
+    "macro_specificity": 0.6794016961203954,
+    "mcc": 0.38346051409423476,
+    "kappa": 0.3825570493132494,
+    "auc": 0.9119131032599226,
+    "average_precision": 0.3222251886372285,
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.9909873002867677,
+        "specificity": 0.367816091954023,
+        "f1": 0.9898721227621483,
+        "support": 4882
+      },
+      "melanoma": {
+        "sensitivity": 0.367816091954023,
+        "specificity": 0.9909873002867677,
+        "f1": 0.39263803680981596,
+        "support": 87
+      }
+    },
+    "confusion_matrix": [
+      [
+        4838,
+        44
+      ],
+      [
+        55,
+        32
+      ]
+    ],
+    "sensitivity": 0.367816091954023,
+    "specificity": 0.9909873002867677
+  }
+}

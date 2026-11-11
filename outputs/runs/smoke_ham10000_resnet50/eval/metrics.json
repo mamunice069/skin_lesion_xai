@@ -1,0 +1,300 @@
+{
+  "run": "smoke_ham10000_resnet50",
+  "smoke": true,
+  "checkpoint_epoch": 1,
+  "test": {
+    "n": 99,
+    "threshold": null,
+    "accuracy": 0.5353535353535354,
+    "balanced_accuracy": 0.1910576985203851,
+    "macro_f1": 0.21573498964803314,
+    "weighted_f1": 0.5290879812618943,
+    "macro_precision": 0.28906773977196515,
+    "macro_sensitivity": 0.1910576985203851,
+    "macro_specificity": 0.8649781341107871,
+    "mcc": 0.06717403234080951,
+    "kappa": 0.06565449322938033,
+    "auc": 0.6421662766524212,
+    "average_precision": 0.24242337026207825,
+    "per_class": {
+      "akiec": {
+        "sensitivity": 0.3333333333333333,
+        "specificity": 1.0,
+        "f1": 0.5,
+        "support": 3
+      },
+      "bcc": {
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "f1": 0.0,
+        "support": 5
+      },
+      "bkl": {
+        "sensitivity": 0.2727272727272727,
+        "specificity": 0.9318181818181818,
+        "f1": 0.3,
+        "support": 11
+      },
+      "df": {
+        "sensitivity": 0.0,
+        "specificity": 0.8775510204081632,
+        "f1": 0.0,
+        "support": 1
+      },
+      "mel": {
+        "sensitivity": 0.0,
+        "specificity": 0.9431818181818182,
+        "f1": 0.0,
+        "support": 11
+      },
+      "nv": {
+        "sensitivity": 0.7313432835820896,
+        "specificity": 0.3125,
+        "f1": 0.7101449275362319,
+        "support": 67
+      },
+      "vasc": {
+        "sensitivity": 0.0,
+        "specificity": 0.9897959183673469,
+        "f1": 0.0,
+        "support": 1
+      }
+    },
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        1,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        7,
+        4,
+        49,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  "val": {
+    "n": 99,
+    "threshold": null,
+    "accuracy": 0.48484848484848486,
+    "balanced_accuracy": 0.12405504942818377,
+    "macro_f1": 0.1323529411764706,
+    "weighted_f1": 0.4855912061794415,
+    "macro_precision": 0.15238095238095237,
+    "macro_sensitivity": 0.12405504942818377,
+    "macro_specificity": 0.8552835164184491,
+    "mcc": 0.0010350031822380962,
+    "kappa": 0.0009893153937475807,
+    "auc": 0.5946056979604604,
+    "average_precision": 0.1826004487731244,
+    "per_class": {
+      "akiec": {
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "bcc": {
+        "sensitivity": 0.0,
+        "specificity": 0.9893617021276596,
+        "f1": 0.0,
+        "support": 5
+      },
+      "bkl": {
+        "sensitivity": 0.18181818181818182,
+        "specificity": 0.9659090909090909,
+        "f1": 0.25,
+        "support": 11
+      },
+      "df": {
+        "sensitivity": 0.0,
+        "specificity": 0.8061224489795918,
+        "f1": 0.0,
+        "support": 1
+      },
+      "mel": {
+        "sensitivity": 0.0,
+        "specificity": 0.9545454545454546,
+        "f1": 0.0,
+        "support": 11
+      },
+      "nv": {
+        "sensitivity": 0.6865671641791045,
+        "specificity": 0.28125,
+        "f1": 0.6764705882352942,
+        "support": 67
+      },
+      "vasc": {
+        "sensitivity": 0.0,
+        "specificity": 0.9897959183673469,
+        "f1": 0.0,
+        "support": 1
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        15,
+        4,
+        46,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  "test_ci95": {
+    "accuracy": {
+      "low": 0.45934343434343433,
+      "high": 0.6464646464646465,
+      "n_valid": 100
+    },
+    "balanced_accuracy": {
+      "low": 0.12322506467375681,
+      "high": 0.36256901643554146,
+      "n_valid": 100
+    },
+    "macro_f1": {
+      "low": 0.11507028440666885,
+      "high": 0.28818241255312194,
+      "n_valid": 100
+    },
+    "macro_sensitivity": {
+      "low": 0.12322506467375681,
+      "high": 0.36256901643554146,
+      "n_valid": 100
+    },
+    "macro_specificity": {
+      "low": 0.8475283342057611,
+      "high": 0.8870981600003963,
+      "n_valid": 100
+    },
+    "mcc": {
+      "low": -0.0479920411325406,
+      "high": 0.21249340139075637,
+      "n_valid": 100
+    },
+    "kappa": {
+      "low": -0.04710711067126763,
+      "high": 0.20896661680603013,
+      "n_valid": 100
+    },
+    "auc": {
+      "low": 0.5714688250699665,
+      "high": 0.7010262949632081,
+      "n_valid": 42
+    },
+    "average_precision": {
+      "low": 0.18462996289465908,
+      "high": 0.3796181695611378,
+      "n_valid": 42
+    }
+  }
+}

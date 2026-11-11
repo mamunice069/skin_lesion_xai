@@ -1,0 +1,46 @@
+{
+  "run": "isic2020_effnetv2_s_pnorm",
+  "smoke": false,
+  "checkpoint_epoch": 5,
+  "val": {
+    "n": 4969,
+    "threshold": null,
+    "accuracy": 0.9782652445159992,
+    "balanced_accuracy": 0.6389669769785324,
+    "macro_f1": 0.6527063757086278,
+    "weighted_f1": 0.9771825295085333,
+    "macro_precision": 0.6697272241041183,
+    "macro_sensitivity": 0.6389669769785324,
+    "macro_specificity": 0.6389669769785324,
+    "mcc": 0.3071578046848703,
+    "kappa": 0.3055278046659454,
+    "auc": 0.8851728375877609,
+    "average_precision": 0.23122770760325817,
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.9905776321179844,
+        "specificity": 0.28735632183908044,
+        "f1": 0.9889570552147239,
+        "support": 4882
+      },
+      "melanoma": {
+        "sensitivity": 0.28735632183908044,
+        "specificity": 0.9905776321179844,
+        "f1": 0.31645569620253167,
+        "support": 87
+      }
+    },
+    "confusion_matrix": [
+      [
+        4836,
+        46
+      ],
+      [
+        62,
+        25
+      ]
+    ],
+    "sensitivity": 0.28735632183908044,
+    "specificity": 0.9905776321179844
+  }
+}

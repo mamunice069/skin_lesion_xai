@@ -1,0 +1,4 @@
+Model,Run,Epoch,Val AUC,Test AUC [95% CI],AP [95% CI],Argmax sens / spec,Youden cutoff,Youden sens / spec,Sens ≥ 0.80 cutoff,Sens ≥ 0.80 sens / spec
+ConvNeXt-T,isic2020_convnext_t,8,0.9085,"0.891 [0.865, 0.916]","0.201 [0.125, 0.296]",0.213 / 0.988,0.3277,0.854 / 0.796,0.3318,0.809 / 0.826
+"Hybrid, cross-attention",isic2020_hybrid,7,0.9118,"0.899 [0.874, 0.923]","0.242 [0.155, 0.336]",0.213 / 0.991,0.3145,0.730 / 0.857,0.3162,0.730 / 0.868
+"EfficientNetV2-S, pretrained norm",isic2020_effnetv2_s_pnorm,5,0.8852,"0.895 [0.866, 0.922]","0.218 [0.141, 0.321]",0.225 / 0.991,0.3109,0.888 / 0.719,0.3222,0.809 / 0.795

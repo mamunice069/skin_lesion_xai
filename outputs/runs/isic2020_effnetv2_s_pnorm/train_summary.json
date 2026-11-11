@@ -1,0 +1,6 @@
+{
+  "best_epoch": 5,
+  "best_val_score": 0.8852175714682602,
+  "monitor": "auc",
+  "epochs_run": 12
+}

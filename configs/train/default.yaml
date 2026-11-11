@@ -1,0 +1,21 @@
+# Fine-tuning recipe shared by all models.
+# Sources: GC-ViT-E §3.4 (AdamW, linear warmup + cosine, ~30 epochs, AMP, gradient clipping,
+# EMA 0.999, early stopping with patience 7) and ViT App. B.1.1 (clip global norm at 1.0).
+# Backbone / head learning rates, weight decay and label smoothing are our choices (GC-ViT-E §3.4
+# does not report them); label smoothing 0.1 is the GC-ViT code default (train.py:255).
+epochs: 30
+backbone_lr: 1.0e-4
+head_lr: 1.0e-3
+weight_decay: 0.05
+warmup_epochs: 3
+min_lr_ratio: 0.01
+grad_clip: 1.0
+label_smoothing: 0.1
+loss: ce
+class_weight_power: 0.5        # sqrt inverse class frequency
+sampler: none
+ema_decay: 0.999
+early_stop_patience: 7
+monitor: auto                  # macro_f1 for HAM10000, auc for ISIC 2020
+amp: true
+seed: 42

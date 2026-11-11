@@ -1,0 +1,31 @@
+% F0: architecture of the hybrid (drawn by hand; dimensions from configs/model/hybrid.yaml and models/fusion.py).
+% Used inside a figure* in main.tex via \input{figures/f0_architecture}.
+\begin{tikzpicture}[
+    font=\footnotesize, >={Stealth[length=4pt]}, node distance=4mm and 6mm,
+    box/.style={draw, rounded corners=2pt, align=center, minimum height=8mm, inner sep=3pt},
+    loc/.style={box, fill=orange!15},
+    glo/.style={box, fill=teal!15},
+    fus/.style={box, fill=gray!12},
+]
+  \node[box] (img) {Dermoscopic\\image\\$224\times224$};
+  \node[loc, right=of img, yshift=7mm]  (eff) {EfficientNetV2-S\\(local branch)};
+  \node[glo, right=of img, yshift=-7mm] (swin) {Swin-T\\(global branch)};
+  \node[loc, right=of eff]  (lgrid) {$7\times7\times1280$\\$1\times1$ conv $\rightarrow$ 49 tokens, $d{=}384$};
+  \node[glo, right=of swin] (ggrid) {$7\times7\times768$\\$1\times1$ conv $\rightarrow$ 49 tokens, $d{=}384$};
+  \node[fus, right=of lgrid, yshift=-7mm, minimum height=22mm, text width=31mm] (fusion)
+       {Bidirectional cross-attention\\$2$ layers, $8$ heads\\local $\leftrightarrow$ global\\(+ position / branch embeddings)};
+  \node[fus, right=of fusion, text width=19mm] (pool) {LayerNorm,\\token mean per stream,\\concatenate (768)};
+  \node[box, right=of pool] (head) {Linear\\head};
+
+  \draw[->] (img) |- (eff);
+  \draw[->] (img) |- (swin);
+  \draw[->] (eff) -- (lgrid);
+  \draw[->] (swin) -- (ggrid);
+  \draw[->] (lgrid.east) -- (lgrid.east -| fusion.west);
+  \draw[->] (ggrid.east) -- (ggrid.east -| fusion.west);
+  \draw[->] (fusion) -- (pool);
+  \draw[->] (pool) -- (head);
+
+  \node[below=1mm of lgrid.south, font=\scriptsize, text=orange!70!black] {Grad-CAM: \emph{local} map};
+  \node[below=1mm of pool.south, font=\scriptsize, text=gray!60!black, align=center] {Grad-CAM: \emph{fused} map};
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+2026-11-02 13:34:14,081 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | fine-tuning ham10000_hybrid (epoch 10) with lam 0.1, mu 1
+2026-11-02 13:34:14,089 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-11-02 13:43:38,410 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | loss terms (epoch means): ce 1.0891  mask 0.6454  consistency 0.0267
+2026-11-02 13:44:12,190 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | epoch 1/5  train_loss 1.1804  val_loss 1.4417  val_macro_f1 0.7940  *best*  (597s, GPU peak 1.53 / 4.00 GiB)
+2026-11-02 13:53:38,165 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | loss terms (epoch means): ce 1.0687  mask 0.6447  consistency 0.0155
+2026-11-02 13:54:12,000 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | epoch 2/5  train_loss 1.1487  val_loss 1.4359  val_macro_f1 0.8052  *best*  (598s, GPU peak 1.52 / 4.00 GiB)
+2026-11-02 14:02:55,852 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | loss terms (epoch means): ce 1.0602  mask 0.6467  consistency 0.0109
+2026-11-02 14:03:29,249 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | epoch 3/5  train_loss 1.1358  val_loss 1.4393  val_macro_f1 0.8064  *best*  (556s, GPU peak 1.52 / 4.00 GiB)
+2026-11-02 14:12:10,641 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | loss terms (epoch means): ce 1.0653  mask 0.6461  consistency 0.0107
+2026-11-02 14:12:39,269 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | epoch 4/5  train_loss 1.1406  val_loss 1.4370  val_macro_f1 0.8143  *best*  (549s, GPU peak 1.52 / 4.00 GiB)
+2026-11-02 14:21:56,538 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | loss terms (epoch means): ce 1.0516  mask 0.6462  consistency 0.0092
+2026-11-02 14:22:34,204 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | epoch 5/5  train_loss 1.1254  val_loss 1.4387  val_macro_f1 0.8132  (594s, GPU peak 1.52 / 4.00 GiB)
+2026-11-02 14:22:34,206 | INFO | train.ham10000_hybrid_mask_l0.1_m1 | done: {'best_epoch': 4, 'best_val_score': 0.8143173113275554, 'monitor': 'macro_f1', 'epochs_run': 5}

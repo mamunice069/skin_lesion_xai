@@ -1,0 +1,2 @@
+2026-11-01 19:28:51,789 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_hybrid\best.pt (epoch 7, val auc 0.9118)
+2026-11-01 19:33:01,737 | INFO | evaluate | test n=4967  acc 0.9770  bal_acc 0.6022  macro_f1 0.6192  auc 0.8991  mcc 0.2424 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_hybrid\eval

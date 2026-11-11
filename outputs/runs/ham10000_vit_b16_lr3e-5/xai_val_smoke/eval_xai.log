@@ -1,0 +1,8 @@
+2026-11-01 12:16:30,098 | INFO | eval_xai | scored 61/61 images
+2026-11-01 12:16:30,150 | INFO | eval_xai | map (all images)                    IoU   Dice IoU-AUC  boxIoU  point  E-mask  E-band
+2026-11-01 12:16:30,150 | INFO | eval_xai | gradcam@pred                      0.491  0.614   0.438   0.573  0.967   0.634   0.139
+2026-11-01 12:16:30,150 | INFO | eval_xai | gradcam@true                      0.469  0.590   0.421   0.551  0.951   0.605   0.142
+2026-11-01 12:16:30,152 | INFO | eval_xai | rollout@none                      0.401  0.523   0.256   0.512  0.443   0.409   0.123
+2026-11-01 12:16:30,152 | INFO | eval_xai | ref_centre@none                   0.459  0.587   0.387   0.518  0.984   0.579   0.138
+2026-11-01 12:16:30,152 | INFO | eval_xai | ref_uniform@none                  0.401  0.523   0.401   0.512    nan   0.401   0.123
+2026-11-01 12:16:30,152 | INFO | eval_xai | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_lr3e-5\xai_val_smoke

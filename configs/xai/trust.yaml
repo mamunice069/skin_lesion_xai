@@ -1,0 +1,37 @@
+# M4 explanation-trust metrics (scripts/eval_trust.py, scripts/compare_xai_paired.py).
+# Fixed before any run; the val run only checks that nothing is degenerate. Any change is logged in
+# docs/report_notes.md before the test run.
+maps:                      # Grad-CAM maps (predicted class) scored per model name; every run also gets
+  convnext_t: [gradcam]    # the reference maps ref_random and ref_centre in the deletion / insertion curves
+  hybrid: [gradcam_local, gradcam_fused]
+
+# Faithfulness: deletion / insertion (Petsiuk et al. 2018, RISE; external). Pixels ranked by the map,
+# changed 1/steps at a time; score = softmax probability of the originally predicted class.
+steps: 50
+blur_kernel: 11            # insertion starts from a Gaussian blur (RISE defaults); deletion fills the
+blur_sigma: 5.0            # dataset-mean colour (0 after normalisation)
+random_grid: 7             # random map: uniform noise on a 7x7 grid (the resolution of every scored map)
+centre_sigma: 0.25         # centre-Gaussian map, as in configs/xai/default.yaml
+
+# Stability: horizontal flip (map flipped back), Gaussian noise, brightness; target = original prediction
+noise_std: 0.03
+brightness: [0.9, 1.1]
+stability_unchanged_only: true   # stab_*_mean averages only the perturbations that left the prediction unchanged
+                                 # (added after the val smoke run: noise changed 16-19% of predictions)
+
+# Sanity: cascading parameter randomisation (Adebayo et al. 2018); Spearman, SSIM, HOG Spearman as in the
+# paper's notebook (code/notebooks/inceptionv3_cascading_randomization.ipynb)
+hog_pixels_per_cell: 16
+
+seed: 0
+batch_size: 16
+forward_batch: 64
+n_boot: 1000
+
+# Primary endpoints (each hybrid map minus ConvNeXt-T Grad-CAM), Holm-corrected together; the rest is exploratory.
+# Faithfulness enters relative to each model's own random map (changed from the raw AUCs after the val smoke run:
+# the fully deleted image keeps 0.26 / 0.43 probability, so raw AUCs mix calibration into the comparison).
+# rand_full_ssim is reported next to rand_full_abs_spearman / rand_full_abs_hog: flat maps score a high SSIM by
+# themselves. The two rank correlations enter as |rho| (changed after the val run: signed values rewarded anti-correlation).
+# Frozen 2026-11-02 after the val run (docs/report_notes.md, "M4 explanation trust"); nothing changes after the test run.
+primary: [deletion_vs_random, insertion_vs_random, rand_full_ssim, stab_spearman_mean, iou, iou_gap]

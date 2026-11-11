@@ -1,0 +1,6 @@
+2026-10-30 22:35:00,958 | INFO | train.smoke_resume_ham10000_convnext_t | train 200 / val 99 samples, 7 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-10-30 22:35:11,873 | INFO | train.smoke_resume_ham10000_convnext_t | epoch 1/2  train_loss 2.3163  val_loss 2.2024  val_macro_f1 0.2007  *best*  (10s, GPU peak 0.72 / 4.00 GiB)
+2026-10-30 22:36:21,494 | INFO | train.smoke_resume_ham10000_convnext_t | resumed from E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_resume_ham10000_convnext_t\last.pt after epoch 1 (best macro_f1 0.2007 at epoch 1, global step 7)
+2026-10-30 22:36:21,494 | INFO | train.smoke_resume_ham10000_convnext_t | train 200 / val 99 samples, 7 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-10-30 22:36:32,681 | INFO | train.smoke_resume_ham10000_convnext_t | epoch 2/2  train_loss 2.3153  val_loss 2.1228  val_macro_f1 0.1558  (10s, GPU peak 0.72 / 4.00 GiB)
+2026-10-30 22:36:32,681 | INFO | train.smoke_resume_ham10000_convnext_t | done: {'best_epoch': 1, 'best_val_score': 0.20066921676579622, 'monitor': 'macro_f1', 'epochs_run': 2}

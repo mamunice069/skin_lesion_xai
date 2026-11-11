@@ -1,0 +1,2 @@
+2026-11-02 07:32:06,315 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_pnorm_lr3e-5\best.pt (epoch 8, val macro_f1 0.8311)
+2026-11-02 07:33:08,659 | INFO | evaluate | test n=1503  acc 0.8523  bal_acc 0.7881  macro_f1 0.7698  auc 0.9564  mcc 0.7259 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_pnorm_lr3e-5\eval

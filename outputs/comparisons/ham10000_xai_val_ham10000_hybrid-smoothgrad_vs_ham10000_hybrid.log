@@ -1,0 +1,32 @@
+2026-11-02 22:58:34,921 | INFO | compare_xai_paired | val, n=1503, 1000 paired resamples; B - A, better = direction of a more trustworthy map
+2026-11-02 22:58:34,921 | INFO | compare_xai_paired | B = ham10000_hybrid:smoothgrad:gradcam_local  vs  A = ham10000_hybrid:gradcam:gradcam_local
+2026-11-02 22:58:34,921 | INFO | compare_xai_paired |   deletion_auc           (lower ) A 0.5238  B 0.5248  B-A +0.0010 [-0.0054, +0.0079]  p 0.740
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   insertion_auc          (higher) A 0.6402  B 0.6317  B-A -0.0085 [-0.0130, -0.0044]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   deletion_vs_random     (lower ) A -0.0411  B -0.0401  B-A +0.0010 [-0.0054, +0.0079]  p 0.740  Holm 0.740
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   insertion_vs_random    (higher) A 0.0313  B 0.0228  B-A -0.0085 [-0.0130, -0.0044]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_abs_spearman (lower ) A 0.2179  B 0.2232  B-A +0.0053 [-0.0039, +0.0142]  p 0.278
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_ssim         (lower ) A 0.2643  B 0.1783  B-A -0.0860 [-0.0919, -0.0799]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_abs_hog      (lower ) A 0.0582  B 0.0607  B-A +0.0025 [-0.0002, +0.0054]  p 0.076
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_spearman_mean     (higher) A 0.7005  B 0.8663  B-A +0.1657 [+0.1514, +0.1804]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_ssim_mean         (higher) A 0.6977  B 0.8481  B-A +0.1504 [+0.1414, +0.1589]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_spearman_no_noise (higher) A 0.7485  B 0.8506  B-A +0.1021 [+0.0871, +0.1177]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   iou                    (higher) A 0.4898  B 0.5120  B-A +0.0221 [+0.0098, +0.0336]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   energy_in_mask         (higher) A 0.7061  B 0.6552  B-A -0.0509 [-0.0617, -0.0409]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   pointing               (higher) A 0.8836  B 0.8762  B-A -0.0073 [-0.0306, +0.0133]  p 0.512
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   iou_gap                (higher) A 0.1197  B 0.0444  B-A -0.0753 [-0.1166, -0.0304]  p 0.004  Holm 0.012
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired | B = ham10000_hybrid:smoothgrad:gradcam_fused  vs  A = ham10000_hybrid:gradcam:gradcam_fused
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   deletion_auc           (lower ) A 0.4786  B 0.4916  B-A +0.0130 [+0.0070, +0.0189]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   insertion_auc          (higher) A 0.6572  B 0.6402  B-A -0.0170 [-0.0206, -0.0132]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   deletion_vs_random     (lower ) A -0.0863  B -0.0733  B-A +0.0130 [+0.0070, +0.0189]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   insertion_vs_random    (higher) A 0.0483  B 0.0313  B-A -0.0170 [-0.0206, -0.0132]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_abs_spearman (lower ) A 0.2044  B 0.2006  B-A -0.0038 [-0.0120, +0.0036]  p 0.336
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_ssim         (lower ) A 0.2939  B 0.3020  B-A +0.0081 [+0.0010, +0.0150]  p 0.030  Holm 0.060
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   rand_full_abs_hog      (lower ) A 0.0570  B 0.0643  B-A +0.0072 [+0.0044, +0.0099]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_spearman_mean     (higher) A 0.8900  B 0.9282  B-A +0.0382 [+0.0301, +0.0457]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_ssim_mean         (higher) A 0.9745  B 0.9613  B-A -0.0132 [-0.0167, -0.0095]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   stab_spearman_no_noise (higher) A 0.9392  B 0.9233  B-A -0.0159 [-0.0223, -0.0098]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   iou                    (higher) A 0.4224  B 0.3916  B-A -0.0308 [-0.0394, -0.0224]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   energy_in_mask         (higher) A 0.4458  B 0.4631  B-A +0.0172 [+0.0100, +0.0248]  p 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   pointing               (higher) A 0.8490  B 0.8623  B-A +0.0133 [-0.0067, +0.0346]  p 0.198
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired |   iou_gap                (higher) A -0.0456  B 0.0312  B-A +0.0768 [+0.0319, +0.1242]  p 0.000  Holm 0.000
+2026-11-02 22:58:34,937 | INFO | compare_xai_paired | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\comparisons\ham10000_xai_val_ham10000_hybrid-smoothgrad_vs_ham10000_hybrid.json

@@ -1,0 +1,29 @@
+# Part B (EXPLORATORY): SmoothGrad-CAM trust metrics (scripts/eval_trust.py, scripts/compare_xai_paired.py).
+# Every M4 setting is copied unchanged from configs/xai/trust.yaml; only the method block below is new.
+# Frozen 2026-11-02 before the val run (docs/report_notes.md, "Part B"); not changed after the test run.
+maps:
+  convnext_t: [gradcam]
+  hybrid: [gradcam_local, gradcam_fused]
+steps: 50
+blur_kernel: 11
+blur_sigma: 5.0
+random_grid: 7
+centre_sigma: 0.25
+noise_std: 0.03
+brightness: [0.9, 1.1]
+stability_unchanged_only: true
+hog_pixels_per_cell: 16
+seed: 0
+batch_size: 16
+forward_batch: 64
+n_boot: 1000
+primary: [deletion_vs_random, insertion_vs_random, rand_full_ssim, stab_spearman_mean, iou, iou_gap]
+
+# method (xai/cam_variants.py): 50 noisy copies, noise std 0.15 x (max - min) of the input, as in the code of
+# Adebayo et al. 2018 (code/src/randomize_inceptionv3.py:78-82)
+method: smoothgrad
+smoothgrad_samples: 50
+smoothgrad_spread: 0.15
+randomisation: full        # every cascade block re-initialised in one step (= the cascade's end state)
+max_samples: null          # all images
+localisation: true         # IoU / energy in mask / pointing with the configs/xai/default.yaml protocol

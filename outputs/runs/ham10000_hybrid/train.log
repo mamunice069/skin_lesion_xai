@@ -1,0 +1,22 @@
+2026-10-31 17:16:03,564 | INFO | train.ham10000_hybrid | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-10-31 17:27:51,689 | INFO | train.ham10000_hybrid | epoch 1/30  train_loss 1.8455  val_loss 1.5655  val_macro_f1 0.5925  *best*  (706s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 18:03:41,209 | INFO | train.ham10000_hybrid | epoch 2/30  train_loss 1.5665  val_loss 1.4822  val_macro_f1 0.6934  *best*  (2147s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 18:25:44,725 | INFO | train.ham10000_hybrid | epoch 3/30  train_loss 1.5003  val_loss 1.4616  val_macro_f1 0.7428  *best*  (1321s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 19:29:24,259 | INFO | train.ham10000_hybrid | epoch 4/30  train_loss 1.4577  val_loss 1.4437  val_macro_f1 0.8046  *best*  (3817s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 19:38:23,355 | INFO | train.ham10000_hybrid | epoch 5/30  train_loss 1.3697  val_loss 1.4213  val_macro_f1 0.8255  *best*  (537s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 19:47:06,493 | INFO | train.ham10000_hybrid | epoch 6/30  train_loss 1.3120  val_loss 1.4184  val_macro_f1 0.8228  (521s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 19:55:47,684 | INFO | train.ham10000_hybrid | epoch 7/30  train_loss 1.2750  val_loss 1.4084  val_macro_f1 0.8318  *best*  (519s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:04:26,565 | INFO | train.ham10000_hybrid | epoch 8/30  train_loss 1.2400  val_loss 1.4073  val_macro_f1 0.8279  (517s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:13:05,658 | INFO | train.ham10000_hybrid | epoch 9/30  train_loss 1.2132  val_loss 1.4122  val_macro_f1 0.8236  (518s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:21:46,102 | INFO | train.ham10000_hybrid | epoch 10/30  train_loss 1.2071  val_loss 1.4157  val_macro_f1 0.8389  *best*  (518s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:30:26,057 | INFO | train.ham10000_hybrid | epoch 11/30  train_loss 1.1584  val_loss 1.4114  val_macro_f1 0.8332  (518s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:39:09,673 | INFO | train.ham10000_hybrid | epoch 12/30  train_loss 1.1497  val_loss 1.4144  val_macro_f1 0.8237  (522s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:43:45,416 | INFO | train.ham10000_hybrid | resumed from E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\last.pt after epoch 12 (best macro_f1 0.8389 at epoch 10, global step 2628)
+2026-10-31 20:43:45,417 | INFO | train.ham10000_hybrid | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-10-31 20:50:14,855 | INFO | train.ham10000_hybrid | epoch 13/30  train_loss 1.1439  val_loss 1.4256  val_macro_f1 0.8254  (388s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:55:03,162 | INFO | train.ham10000_hybrid | epoch 14/30  train_loss 1.1126  val_loss 1.4366  val_macro_f1 0.8033  (287s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 20:59:50,234 | INFO | train.ham10000_hybrid | epoch 15/30  train_loss 1.0837  val_loss 1.4384  val_macro_f1 0.8235  (286s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 21:07:40,752 | INFO | train.ham10000_hybrid | epoch 16/30  train_loss 1.0653  val_loss 1.4454  val_macro_f1 0.8140  (469s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 21:16:09,647 | INFO | train.ham10000_hybrid | epoch 17/30  train_loss 1.0484  val_loss 1.4569  val_macro_f1 0.8041  (507s, GPU peak 1.34 / 4.00 GiB)
+2026-10-31 21:16:09,649 | INFO | train.ham10000_hybrid | early stopping: no improvement for 7 epochs
+2026-10-31 21:16:09,651 | INFO | train.ham10000_hybrid | done: {'best_epoch': 10, 'best_val_score': 0.8388842941037414, 'monitor': 'macro_f1', 'epochs_run': 17}

@@ -1,0 +1,14 @@
+2026-11-01 22:58:12,898 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\best.pt (epoch 16); maps ['gradcam']
+2026-11-01 22:58:28,500 | INFO | eval_trust | batch 1/7  gradcam 1s  stability 1s  faithfulness 13s  GPU peak 0.70 / 4.00 GiB
+2026-11-01 22:59:51,309 | INFO | eval_trust | randomised head (head): 5s
+2026-11-01 22:59:56,581 | INFO | eval_trust | randomised grid7 (stages.3): 5s
+2026-11-01 23:00:01,354 | INFO | eval_trust | randomised grid14 (stages.2): 5s
+2026-11-01 23:00:06,120 | INFO | eval_trust | randomised grid28 (stages.1): 5s
+2026-11-01 23:00:10,896 | INFO | eval_trust | randomised grid56 (stages.0): 5s
+2026-11-01 23:00:15,595 | INFO | eval_trust | randomised stem (stem): 5s
+2026-11-01 23:00:15,658 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+2026-11-01 23:00:15,660 | INFO | eval_trust | gradcam           0.473     0.724    0.922     0.913    -0.045     0.252
+2026-11-01 23:00:15,660 | INFO | eval_trust | ref_centre        0.523     0.711       -        -        -        -
+2026-11-01 23:00:15,660 | INFO | eval_trust | ref_random        0.533     0.658       -        -        -        -
+2026-11-01 23:00:15,660 | INFO | eval_trust | seconds: {'gradcam': 1.2, 'stability': 8.2, 'faithfulness': 81.8, 'randomisation_head': 5.3, 'randomisation_grid7': 5.3, 'randomisation_grid14': 4.8, 'randomisation_grid28': 4.8, 'randomisation_grid56': 4.8, 'randomisation_stem': 4.7}
+2026-11-01 23:00:15,660 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\trust_val_smoke

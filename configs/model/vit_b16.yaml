@@ -1,0 +1,7 @@
+# Baseline (proposal slide 9): ViT-Base/16 (Dosovitskiy et al., §3.1), ImageNet-21k pretrained (AugReg2).
+# ViT §4.3: needs large-scale pretraining; on ~10k images expect it to trail CNNs/hybrids.
+name: vit_b16
+arch: timm
+timm_name: vit_base_patch16_224.augreg2_in21k_ft_in1k
+drop_rate: 0.2
+drop_path_rate: 0.1

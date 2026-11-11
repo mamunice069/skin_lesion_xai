@@ -1,0 +1,15 @@
+2026-11-03 09:30:11,598 | INFO | train.isic2020_effnetv2_s_pnorm | train 23190 / val 4969 samples, 724 optimizer steps per epoch, effective batch 32, monitor auc
+2026-11-03 10:14:15,294 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 1/30  train_loss 0.8255  val_loss 0.8155  val_auc 0.7833  *best*  (2643s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:16:59,551 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 2/30  train_loss 0.8176  val_loss 0.8076  val_auc 0.8597  *best*  (164s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:19:42,443 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 3/30  train_loss 0.8086  val_loss 0.8067  val_auc 0.8654  *best*  (162s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:22:25,633 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 4/30  train_loss 0.8059  val_loss 0.7994  val_auc 0.8804  *best*  (162s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:25:08,730 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 5/30  train_loss 0.8009  val_loss 0.7985  val_auc 0.8852  *best*  (162s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:27:52,208 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 6/30  train_loss 0.7924  val_loss 0.7952  val_auc 0.8835  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:30:35,576 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 7/30  train_loss 0.7873  val_loss 0.7976  val_auc 0.8812  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:33:18,695 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 8/30  train_loss 0.7828  val_loss 0.7978  val_auc 0.8614  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:36:02,039 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 9/30  train_loss 0.7741  val_loss 0.7999  val_auc 0.8710  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:38:44,972 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 10/30  train_loss 0.7715  val_loss 0.8028  val_auc 0.8697  (162s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:41:28,615 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 11/30  train_loss 0.7653  val_loss 0.8039  val_auc 0.8515  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:44:12,110 | INFO | train.isic2020_effnetv2_s_pnorm | epoch 12/30  train_loss 0.7562  val_loss 0.8062  val_auc 0.8491  (163s, GPU peak 2.74 / 14.56 GiB)
+2026-11-03 10:44:12,111 | INFO | train.isic2020_effnetv2_s_pnorm | early stopping: no improvement for 7 epochs
+2026-11-03 10:44:12,112 | INFO | train.isic2020_effnetv2_s_pnorm | done: {'best_epoch': 5, 'best_val_score': 0.8852175714682602, 'monitor': 'auc', 'epochs_run': 12}

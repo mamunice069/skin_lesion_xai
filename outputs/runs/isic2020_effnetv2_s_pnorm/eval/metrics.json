@@ -1,0 +1,323 @@
+{
+  "run": "isic2020_effnetv2_s_pnorm",
+  "smoke": false,
+  "checkpoint_epoch": 5,
+  "test": {
+    "n": 4967,
+    "threshold": null,
+    "accuracy": 0.9772498490034226,
+    "balanced_accuracy": 0.6078495054613468,
+    "macro_f1": 0.6249424487785776,
+    "weighted_f1": 0.9754202509548932,
+    "macro_precision": 0.6492134917397512,
+    "macro_sensitivity": 0.6078495054613468,
+    "macro_specificity": 0.6078495054613468,
+    "mcc": 0.2537132341230383,
+    "kappa": 0.2501980471813178,
+    "auc": 0.894630097986373,
+    "average_precision": 0.21754140363771218,
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.990979909799098,
+        "specificity": 0.2247191011235955,
+        "f1": 0.9884469890604233,
+        "support": 4878
+      },
+      "melanoma": {
+        "sensitivity": 0.2247191011235955,
+        "specificity": 0.990979909799098,
+        "f1": 0.26143790849673204,
+        "support": 89
+      }
+    },
+    "confusion_matrix": [
+      [
+        4834,
+        44
+      ],
+      [
+        69,
+        20
+      ]
+    ],
+    "sensitivity": 0.2247191011235955,
+    "specificity": 0.990979909799098
+  },
+  "val": {
+    "n": 4969,
+    "threshold": null,
+    "accuracy": 0.9782652445159992,
+    "balanced_accuracy": 0.6389669769785324,
+    "macro_f1": 0.6527063757086278,
+    "weighted_f1": 0.9771825295085333,
+    "macro_precision": 0.6697272241041183,
+    "macro_sensitivity": 0.6389669769785324,
+    "macro_specificity": 0.6389669769785324,
+    "mcc": 0.3071578046848703,
+    "kappa": 0.3055278046659454,
+    "auc": 0.8851728375877609,
+    "average_precision": 0.23122770760325817,
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.9905776321179844,
+        "specificity": 0.28735632183908044,
+        "f1": 0.9889570552147239,
+        "support": 4882
+      },
+      "melanoma": {
+        "sensitivity": 0.28735632183908044,
+        "specificity": 0.9905776321179844,
+        "f1": 0.31645569620253167,
+        "support": 87
+      }
+    },
+    "confusion_matrix": [
+      [
+        4836,
+        46
+      ],
+      [
+        62,
+        25
+      ]
+    ],
+    "sensitivity": 0.28735632183908044,
+    "specificity": 0.9905776321179844
+  },
+  "test_ci95": {
+    "accuracy": {
+      "low": 0.9728206160660359,
+      "high": 0.9810750956311657,
+      "n_valid": 1000
+    },
+    "balanced_accuracy": {
+      "low": 0.5643133966381472,
+      "high": 0.6525165801927939,
+      "n_valid": 1000
+    },
+    "macro_f1": {
+      "low": 0.5770358908813562,
+      "high": 0.6731813061556924,
+      "n_valid": 1000
+    },
+    "macro_sensitivity": {
+      "low": 0.5643133966381472,
+      "high": 0.6525165801927939,
+      "n_valid": 1000
+    },
+    "macro_specificity": {
+      "low": 0.5643133966381472,
+      "high": 0.6525165801927939,
+      "n_valid": 1000
+    },
+    "mcc": {
+      "low": 0.15832958067923802,
+      "high": 0.3504380051590925,
+      "n_valid": 1000
+    },
+    "kappa": {
+      "low": 0.15427034166723572,
+      "high": 0.34658989243132116,
+      "n_valid": 1000
+    },
+    "auc": {
+      "low": 0.8657948552164776,
+      "high": 0.9223626062243686,
+      "n_valid": 1000
+    },
+    "average_precision": {
+      "low": 0.14144766231213896,
+      "high": 0.32100670958428723,
+      "n_valid": 1000
+    }
+  },
+  "val_threshold_file": {
+    "path": "eval_val/threshold.json",
+    "created": "2026-11-03T17:09:16",
+    "sha256": "556c35476f23606cea3b6a5b3858a4dfe5b3764baeb5fdb306968781e7a9d724"
+  },
+  "test_at_val_thresholds": {
+    "youden": {
+      "threshold": 0.31090355,
+      "metrics": {
+        "n": 4967,
+        "threshold": 0.31090355,
+        "accuracy": 0.7217636400241595,
+        "balanced_accuracy": 0.803188818405038,
+        "macro_f1": 0.46897799603303536,
+        "weighted_f1": 0.8222287836237834,
+        "macro_precision": 0.5258005345652326,
+        "macro_sensitivity": 0.803188818405038,
+        "macro_specificity": 0.803188818405038,
+        "mcc": 0.17688904532560742,
+        "kappa": 0.07123731311820947,
+        "auc": 0.894630097986373,
+        "average_precision": 0.21754140363771218,
+        "per_class": {
+          "benign": {
+            "sensitivity": 0.7187371873718738,
+            "specificity": 0.8876404494382022,
+            "f1": 0.8353585894686681,
+            "support": 4878
+          },
+          "melanoma": {
+            "sensitivity": 0.8876404494382022,
+            "specificity": 0.7187371873718738,
+            "f1": 0.1025974025974026,
+            "support": 89
+          }
+        },
+        "confusion_matrix": [
+          [
+            3506,
+            1372
+          ],
+          [
+            10,
+            79
+          ]
+        ],
+        "sensitivity": 0.8876404494382022,
+        "specificity": 0.7187371873718738
+      },
+      "ci95": {
+        "accuracy": {
+          "low": 0.7096788806120394,
+          "high": 0.7340446949869136,
+          "n_valid": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.7698488693525252,
+          "high": 0.835036406892269,
+          "n_valid": 1000
+        },
+        "macro_f1": {
+          "low": 0.4575853360103791,
+          "high": 0.48007357164827547,
+          "n_valid": 1000
+        },
+        "macro_sensitivity": {
+          "low": 0.7698488693525252,
+          "high": 0.835036406892269,
+          "n_valid": 1000
+        },
+        "macro_specificity": {
+          "low": 0.7698488693525252,
+          "high": 0.835036406892269,
+          "n_valid": 1000
+        },
+        "mcc": {
+          "low": 0.15131076182766154,
+          "high": 0.20129546958263045,
+          "n_valid": 1000
+        },
+        "kappa": {
+          "low": 0.05605483040978175,
+          "high": 0.08664992078405004,
+          "n_valid": 1000
+        },
+        "auc": {
+          "low": 0.8657948552164776,
+          "high": 0.9223626062243686,
+          "n_valid": 1000
+        },
+        "average_precision": {
+          "low": 0.14144766231213896,
+          "high": 0.32100670958428723,
+          "n_valid": 1000
+        }
+      }
+    },
+    "sensitivity_0.80": {
+      "threshold": 0.322206,
+      "metrics": {
+        "n": 4967,
+        "threshold": 0.322206,
+        "accuracy": 0.7954499698006845,
+        "balanced_accuracy": 0.802095858037232,
+        "macro_f1": 0.5041706295245356,
+        "weighted_f1": 0.8705842782196964,
+        "macro_precision": 0.5314317205321554,
+        "macro_sensitivity": 0.802095858037232,
+        "macro_specificity": 0.802095858037232,
+        "mcc": 0.1948886100699367,
+        "kappa": 0.09416662687786681,
+        "auc": 0.894630097986373,
+        "average_precision": 0.21754140363771218,
+        "per_class": {
+          "benign": {
+            "sensitivity": 0.7952029520295203,
+            "specificity": 0.8089887640449438,
+            "f1": 0.8842033280145886,
+            "support": 4878
+          },
+          "melanoma": {
+            "sensitivity": 0.8089887640449438,
+            "specificity": 0.7952029520295203,
+            "f1": 0.12413793103448276,
+            "support": 89
+          }
+        },
+        "confusion_matrix": [
+          [
+            3879,
+            999
+          ],
+          [
+            17,
+            72
+          ]
+        ],
+        "sensitivity": 0.8089887640449438,
+        "specificity": 0.7952029520295203
+      },
+      "ci95": {
+        "accuracy": {
+          "low": 0.7849808737668613,
+          "high": 0.8063267565935173,
+          "n_valid": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.7603195547654916,
+          "high": 0.8431813744175058,
+          "n_valid": 1000
+        },
+        "macro_f1": {
+          "low": 0.4910323128404026,
+          "high": 0.5185790207581207,
+          "n_valid": 1000
+        },
+        "macro_sensitivity": {
+          "low": 0.7603195547654916,
+          "high": 0.8431813744175058,
+          "n_valid": 1000
+        },
+        "macro_specificity": {
+          "low": 0.7603195547654916,
+          "high": 0.8431813744175058,
+          "n_valid": 1000
+        },
+        "mcc": {
+          "low": 0.16228933477502588,
+          "high": 0.22762503818001845,
+          "n_valid": 1000
+        },
+        "kappa": {
+          "low": 0.07387171048374062,
+          "high": 0.11679814578171231,
+          "n_valid": 1000
+        },
+        "auc": {
+          "low": 0.8657948552164776,
+          "high": 0.9223626062243686,
+          "n_valid": 1000
+        },
+        "average_precision": {
+          "low": 0.14144766231213896,
+          "high": 0.32100670958428723,
+          "n_valid": 1000
+        }
+      }
+    }
+  }
+}

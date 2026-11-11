@@ -1,0 +1,13 @@
+# Proposed model: EfficientNetV2-S (local) + Swin-T (global) + bidirectional cross-attention fusion.
+# Each branch gets its own pretrained input normalisation (EfficientNetV2 0.5/0.5, Swin ImageNet).
+name: hybrid
+arch: hybrid
+local_timm_name: tf_efficientnetv2_s.in21k_ft_in1k
+global_timm_name: swin_tiny_patch4_window7_224.ms_in22k_ft_in1k
+fusion: cross_attention
+fusion_dim: 384
+fusion_layers: 2
+fusion_heads: 8
+match_pretrained_norm: true
+drop_rate: 0.2
+drop_path_rate: 0.1

@@ -1,0 +1,4 @@
+2026-11-01 12:15:50,556 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\best.pt (epoch 10)
+2026-11-01 12:15:51,963 | INFO | explain | batch 1/8  GPU peak 0.35 / 4.00 GiB
+2026-11-01 12:15:53,768 | INFO | explain | 61 images, maps {'gradcam_local@pred': [7, 7], 'gradcam_global@pred': [7, 7], 'gradcam_fused@pred': [7, 7], 'gradcam_local@true': [7, 7], 'gradcam_global@true': [7, 7], 'gradcam_fused@true': [7, 7], 'xattn_local_to_global@none': [7, 7], 'xattn_global_to_local@none': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val_smoke\maps.npz
+2026-11-01 12:15:59,363 | INFO | explain | 12 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val_smoke\figures

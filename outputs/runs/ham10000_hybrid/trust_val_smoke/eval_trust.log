@@ -1,0 +1,16 @@
+2026-11-01 23:00:28,676 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\best.pt (epoch 10); maps ['gradcam_local', 'gradcam_fused']
+2026-11-01 23:01:14,252 | INFO | eval_trust | batch 1/7  gradcam 1s  stability 2s  faithfulness 42s  GPU peak 1.05 / 4.00 GiB
+2026-11-01 23:04:47,618 | INFO | eval_trust | randomised head (head): 5s
+2026-11-01 23:04:53,425 | INFO | eval_trust | randomised fusion (fusion): 6s
+2026-11-01 23:04:58,904 | INFO | eval_trust | randomised grid7 (local_backbone.model.blocks.5, local_backbone.model.conv_head, local_backbone.model.bn2, global_backbone.model.layers.3, global_backbone.model.norm): 5s
+2026-11-01 23:05:04,376 | INFO | eval_trust | randomised grid14 (local_backbone.model.blocks.4, local_backbone.model.blocks.3, global_backbone.model.layers.2): 5s
+2026-11-01 23:05:09,707 | INFO | eval_trust | randomised grid28 (local_backbone.model.blocks.2, global_backbone.model.layers.1): 5s
+2026-11-01 23:05:14,869 | INFO | eval_trust | randomised grid56 (local_backbone.model.blocks.1, global_backbone.model.layers.0): 5s
+2026-11-01 23:05:20,127 | INFO | eval_trust | randomised stem (local_backbone.model.blocks.0, local_backbone.model.conv_stem, local_backbone.model.bn1, global_backbone.model.patch_embed): 5s
+2026-11-01 23:05:20,207 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+2026-11-01 23:05:20,207 | INFO | eval_trust | gradcam_fused     0.500     0.661    0.894     0.951    -0.101     0.295
+2026-11-01 23:05:20,207 | INFO | eval_trust | gradcam_local     0.525     0.639    0.708     0.709    -0.002     0.277
+2026-11-01 23:05:20,207 | INFO | eval_trust | ref_centre        0.515     0.642       -        -        -        -
+2026-11-01 23:05:20,207 | INFO | eval_trust | ref_random        0.579     0.612       -        -        -        -
+2026-11-01 23:05:20,207 | INFO | eval_trust | seconds: {'gradcam': 2.1, 'stability': 16.9, 'faithfulness': 234.0, 'randomisation_head': 5.0, 'randomisation_fusion': 5.8, 'randomisation_grid7': 5.5, 'randomisation_grid14': 5.5, 'randomisation_grid28': 5.3, 'randomisation_grid56': 5.2, 'randomisation_stem': 5.3}
+2026-11-01 23:05:20,207 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\trust_val_smoke

@@ -1,0 +1,8 @@
+13:01:16 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_effnetv2_s_pnorm\best.pt (epoch 9)
+13:01:17 | INFO | explain | batch 1/94  GPU peak 0.20 / 4.00 GiB
+13:01:20 | INFO | explain | batch 21/94  GPU peak 0.22 / 4.00 GiB
+13:01:22 | INFO | explain | batch 41/94  GPU peak 0.22 / 4.00 GiB
+13:01:25 | INFO | explain | batch 61/94  GPU peak 0.22 / 4.00 GiB
+13:01:28 | INFO | explain | batch 81/94  GPU peak 0.22 / 4.00 GiB
+13:01:30 | INFO | explain | 1503 images, maps {'gradcam@pred': [7, 7], 'gradcam@true': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_effnetv2_s_pnorm\xai_val\maps.npz
+13:01:33 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_effnetv2_s_pnorm\xai_val\figures

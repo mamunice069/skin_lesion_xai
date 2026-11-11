@@ -1,0 +1,19 @@
+2026-11-01 05:42:27,540 | INFO | train.ham10000_effnetv2_s_pnorm | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+2026-11-01 05:48:35,114 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 1/30  train_loss 1.9206  val_loss 1.8118  val_macro_f1 0.4967  *best*  (366s, GPU peak 0.50 / 4.00 GiB)
+2026-11-01 05:54:24,325 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 2/30  train_loss 1.6254  val_loss 1.6084  val_macro_f1 0.6823  *best*  (348s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:00:13,780 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 3/30  train_loss 1.5222  val_loss 1.5263  val_macro_f1 0.7348  *best*  (348s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:06:11,156 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 4/30  train_loss 1.4622  val_loss 1.4873  val_macro_f1 0.7404  *best*  (356s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:12:01,602 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 5/30  train_loss 1.3950  val_loss 1.4675  val_macro_f1 0.7495  *best*  (349s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:17:52,726 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 6/30  train_loss 1.3410  val_loss 1.4637  val_macro_f1 0.7433  (350s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:23:42,254 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 7/30  train_loss 1.2992  val_loss 1.4642  val_macro_f1 0.7469  (349s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:29:31,278 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 8/30  train_loss 1.2534  val_loss 1.4650  val_macro_f1 0.7479  (348s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:35:22,372 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 9/30  train_loss 1.2284  val_loss 1.4533  val_macro_f1 0.7777  *best*  (350s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:41:01,325 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 10/30  train_loss 1.2061  val_loss 1.4528  val_macro_f1 0.7704  (338s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:47:03,498 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 11/30  train_loss 1.1803  val_loss 1.4530  val_macro_f1 0.7652  (361s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:53:00,290 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 12/30  train_loss 1.1524  val_loss 1.4614  val_macro_f1 0.7555  (356s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 06:58:54,983 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 13/30  train_loss 1.1355  val_loss 1.4588  val_macro_f1 0.7510  (354s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 07:04:45,519 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 14/30  train_loss 1.1135  val_loss 1.4608  val_macro_f1 0.7647  (350s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 07:08:07,252 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 15/30  train_loss 1.1066  val_loss 1.4685  val_macro_f1 0.7587  (201s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 07:11:27,708 | INFO | train.ham10000_effnetv2_s_pnorm | epoch 16/30  train_loss 1.1009  val_loss 1.4717  val_macro_f1 0.7639  (200s, GPU peak 0.49 / 4.00 GiB)
+2026-11-01 07:11:27,708 | INFO | train.ham10000_effnetv2_s_pnorm | early stopping: no improvement for 7 epochs
+2026-11-01 07:11:27,708 | INFO | train.ham10000_effnetv2_s_pnorm | done: {'best_epoch': 9, 'best_val_score': 0.7777104862864396, 'monitor': 'macro_f1', 'epochs_run': 16}

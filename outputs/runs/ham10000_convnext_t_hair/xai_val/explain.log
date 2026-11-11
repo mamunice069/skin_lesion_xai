@@ -1,0 +1,8 @@
+2026-11-01 13:06:31,554 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t_hair\best.pt (epoch 19)
+2026-11-01 13:06:32,919 | INFO | explain | batch 1/94  GPU peak 0.32 / 4.00 GiB
+2026-11-01 13:06:37,116 | INFO | explain | batch 21/94  GPU peak 0.33 / 4.00 GiB
+2026-11-01 13:06:41,325 | INFO | explain | batch 41/94  GPU peak 0.33 / 4.00 GiB
+2026-11-01 13:06:45,642 | INFO | explain | batch 61/94  GPU peak 0.33 / 4.00 GiB
+2026-11-01 13:06:50,054 | INFO | explain | batch 81/94  GPU peak 0.33 / 4.00 GiB
+2026-11-01 13:06:53,024 | INFO | explain | 1503 images, maps {'gradcam@pred': [7, 7], 'gradcam@true': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t_hair\xai_val\maps.npz
+2026-11-01 13:06:56,223 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t_hair\xai_val\figures

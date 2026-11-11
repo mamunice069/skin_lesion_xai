@@ -1,0 +1,23 @@
+# Part B (EXPLORATORY): trust run of the selected mask-guided hybrid, val then test once. Identical to the M4
+# protocol (configs/xai/trust.yaml: Grad-CAM, cascade randomisation, all images) except that localisation is
+# scored inside eval_trust.py (same configs/xai/default.yaml protocol as eval_xai.py), so no explain.py pass is
+# needed. Frozen 2026-11-02 before any fine-tuning run (docs/report_notes.md, "Part B").
+maps:
+  hybrid: [gradcam_local, gradcam_fused]
+steps: 50
+blur_kernel: 11
+blur_sigma: 5.0
+random_grid: 7
+centre_sigma: 0.25
+noise_std: 0.03
+brightness: [0.9, 1.1]
+stability_unchanged_only: true
+hog_pixels_per_cell: 16
+seed: 0
+batch_size: 16
+forward_batch: 64
+n_boot: 1000
+primary: [deletion_vs_random, insertion_vs_random, rand_full_ssim, stab_spearman_mean, iou, iou_gap]
+method: gradcam
+randomisation: cascade
+localisation: true

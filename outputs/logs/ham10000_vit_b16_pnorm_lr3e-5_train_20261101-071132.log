@@ -1,0 +1,18 @@
+07:11:42 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+07:14:28 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 1/30  train_loss 1.9651  val_loss 1.6196  val_macro_f1 0.5897  *best*  (164s, GPU peak 1.95 / 4.00 GiB)
+07:17:06 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 2/30  train_loss 1.5747  val_loss 1.4990  val_macro_f1 0.7557  *best*  (157s, GPU peak 1.95 / 4.00 GiB)
+07:19:46 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 3/30  train_loss 1.4656  val_loss 1.4666  val_macro_f1 0.7914  *best*  (158s, GPU peak 1.95 / 4.00 GiB)
+07:22:24 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 4/30  train_loss 1.4156  val_loss 1.4601  val_macro_f1 0.7800  (157s, GPU peak 1.95 / 4.00 GiB)
+07:25:03 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 5/30  train_loss 1.3253  val_loss 1.4492  val_macro_f1 0.8010  *best*  (157s, GPU peak 1.95 / 4.00 GiB)
+07:27:42 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 6/30  train_loss 1.3041  val_loss 1.4415  val_macro_f1 0.8113  *best*  (157s, GPU peak 1.95 / 4.00 GiB)
+07:30:20 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 7/30  train_loss 1.2537  val_loss 1.4251  val_macro_f1 0.8114  *best*  (157s, GPU peak 1.95 / 4.00 GiB)
+07:32:59 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 8/30  train_loss 1.2123  val_loss 1.4424  val_macro_f1 0.8311  *best*  (157s, GPU peak 1.95 / 4.00 GiB)
+07:35:38 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 9/30  train_loss 1.1866  val_loss 1.4485  val_macro_f1 0.8128  (157s, GPU peak 1.95 / 4.00 GiB)
+07:38:16 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 10/30  train_loss 1.1587  val_loss 1.4541  val_macro_f1 0.8119  (157s, GPU peak 1.95 / 4.00 GiB)
+07:40:55 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 11/30  train_loss 1.1382  val_loss 1.4641  val_macro_f1 0.8138  (157s, GPU peak 1.95 / 4.00 GiB)
+07:43:33 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 12/30  train_loss 1.1203  val_loss 1.4662  val_macro_f1 0.8140  (157s, GPU peak 1.95 / 4.00 GiB)
+07:46:11 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 13/30  train_loss 1.0798  val_loss 1.4685  val_macro_f1 0.8223  (157s, GPU peak 1.95 / 4.00 GiB)
+07:48:50 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 14/30  train_loss 1.0777  val_loss 1.4697  val_macro_f1 0.8130  (157s, GPU peak 1.95 / 4.00 GiB)
+07:51:28 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | epoch 15/30  train_loss 1.0549  val_loss 1.4782  val_macro_f1 0.8175  (157s, GPU peak 1.95 / 4.00 GiB)
+07:51:28 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | early stopping: no improvement for 7 epochs
+07:51:28 | INFO | train.ham10000_vit_b16_pnorm_lr3e-5 | done: {'best_epoch': 8, 'best_val_score': 0.8310874159325058, 'monitor': 'macro_f1', 'epochs_run': 15}

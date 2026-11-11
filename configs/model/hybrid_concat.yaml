@@ -1,0 +1,9 @@
+# Ablation: same branches as hybrid.yaml, fused by pooled-feature concatenation (no attention between branches).
+name: hybrid_concat
+arch: hybrid
+local_timm_name: tf_efficientnetv2_s.in21k_ft_in1k
+global_timm_name: swin_tiny_patch4_window7_224.ms_in22k_ft_in1k
+fusion: concat
+match_pretrained_norm: true
+drop_rate: 0.2
+drop_path_rate: 0.1

@@ -1,0 +1,2 @@
+2026-11-03 14:43:21,917 | INFO | explain_randomised | gradcam: mean Spearman -0.031, SSIM 0.247 over 14 images
+2026-11-03 14:43:21,917 | INFO | explain_randomised | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\xai_test_randomised_examples

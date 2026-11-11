@@ -1,0 +1,12 @@
+02:18:22 | INFO | train.ham10000_vit_b16 | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+02:21:21 | INFO | train.ham10000_vit_b16 | epoch 1/30  train_loss 1.9054  val_loss 1.5788  val_macro_f1 0.6505  *best*  (176s, GPU peak 1.95 / 4.00 GiB)
+02:24:10 | INFO | train.ham10000_vit_b16 | epoch 2/30  train_loss 1.6093  val_loss 1.5200  val_macro_f1 0.7594  *best*  (167s, GPU peak 1.95 / 4.00 GiB)
+02:27:00 | INFO | train.ham10000_vit_b16 | epoch 3/30  train_loss 1.5856  val_loss 1.5165  val_macro_f1 0.7509  (168s, GPU peak 1.95 / 4.00 GiB)
+02:29:49 | INFO | train.ham10000_vit_b16 | epoch 4/30  train_loss 1.5707  val_loss 1.5098  val_macro_f1 0.7227  (167s, GPU peak 1.95 / 4.00 GiB)
+02:32:38 | INFO | train.ham10000_vit_b16 | epoch 5/30  train_loss 1.5203  val_loss 1.4977  val_macro_f1 0.7300  (167s, GPU peak 1.95 / 4.00 GiB)
+02:35:26 | INFO | train.ham10000_vit_b16 | epoch 6/30  train_loss 1.4886  val_loss 1.4951  val_macro_f1 0.7391  (167s, GPU peak 1.95 / 4.00 GiB)
+02:38:16 | INFO | train.ham10000_vit_b16 | epoch 7/30  train_loss 1.4538  val_loss 1.4958  val_macro_f1 0.7278  (167s, GPU peak 1.95 / 4.00 GiB)
+02:41:05 | INFO | train.ham10000_vit_b16 | epoch 8/30  train_loss 1.4183  val_loss 1.4873  val_macro_f1 0.7410  (167s, GPU peak 1.95 / 4.00 GiB)
+02:43:54 | INFO | train.ham10000_vit_b16 | epoch 9/30  train_loss 1.3880  val_loss 1.4809  val_macro_f1 0.7432  (167s, GPU peak 1.95 / 4.00 GiB)
+02:43:54 | INFO | train.ham10000_vit_b16 | early stopping: no improvement for 7 epochs
+02:43:54 | INFO | train.ham10000_vit_b16 | done: {'best_epoch': 2, 'best_val_score': 0.7594074656134454, 'monitor': 'macro_f1', 'epochs_run': 9}

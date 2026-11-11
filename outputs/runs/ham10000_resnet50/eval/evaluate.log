@@ -1,0 +1,2 @@
+2026-10-31 16:42:18,748 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_resnet50\best.pt (epoch 23, val macro_f1 0.7172)
+2026-10-31 16:43:50,542 | INFO | evaluate | test n=1503  acc 0.8150  bal_acc 0.7577  macro_f1 0.7111  auc 0.9548  mcc 0.6568 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_resnet50\eval

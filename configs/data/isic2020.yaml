@@ -1,0 +1,27 @@
+# ISIC 2020, binary (benign vs melanoma). Kaggle "ISIC 2020 JPG 256x256 RESIZED" copy.
+# Only the public training set is used (test labels are not public); we split it ourselves.
+name: isic2020
+task: binary
+data_root: ..
+image_dir: datasets/isic2020/images             # 256x256 JPGs
+metadata_csv: datasets/isic2020/train-metadata.csv
+mask_dir: null                                  # no lesion masks for ISIC 2020
+image_ext: .jpg
+
+id_col: isic_id
+label_col: target                               # 0 = benign, 1 = melanoma
+group_col: patient_id                           # split by patient
+classes: [benign, melanoma]
+
+split_csv: data/splits/isic2020.csv
+split_ratios: {train: 0.70, val: 0.15, test: 0.15}
+split_folds: 20
+seed: 42
+
+hair_removed_dir: data/processed/isic2020_dullrazor
+use_hair_removal: false
+# Smaller kernel than HAM10000 because images are 256 px. Tuned on the first 50 split images.
+# Known limits: light (blond/white) hair is mostly missed; very dense thick hair leaves streaks.
+dullrazor: {kernel_size: 11, threshold: 12, min_length_frac: 0.08, min_elongation: 8.0, dilate: 1, inpaint_radius: 2}
+
+image_size: 224

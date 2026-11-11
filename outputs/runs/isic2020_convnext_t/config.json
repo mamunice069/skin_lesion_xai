@@ -1,0 +1,91 @@
+{
+  "run_name": "isic2020_convnext_t",
+  "smoke": false,
+  "data_config": "configs/data/isic2020_kaggle.yaml",
+  "model_config": "configs/model/convnext_t.yaml",
+  "data": {
+    "name": "isic2020",
+    "task": "binary",
+    "data_root": "/kaggle/input/datasets/abdullah069/isic2020-256-local",
+    "image_dir": "images",
+    "metadata_csv": "train-metadata.csv",
+    "id_col": "isic_id",
+    "label_col": "target",
+    "group_col": "patient_id",
+    "classes": [
+      "benign",
+      "melanoma"
+    ],
+    "split_csv": "data/splits/isic2020.csv",
+    "mask_dir": null,
+    "mask_suffix": "_segmentation.png",
+    "image_ext": ".jpg",
+    "split_ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "split_folds": 20,
+    "seed": 42,
+    "hair_removed_dir": "data/processed/isic2020_dullrazor",
+    "use_hair_removal": false,
+    "dullrazor": {
+      "kernel_size": 11,
+      "threshold": 12,
+      "min_length_frac": 0.08,
+      "min_elongation": 8.0,
+      "dilate": 1,
+      "inpaint_radius": 2
+    },
+    "image_size": 224
+  },
+  "model": {
+    "name": "convnext_t",
+    "arch": "timm",
+    "timm_name": "convnext_tiny.fb_in22k_ft_in1k",
+    "pretrained": true,
+    "drop_rate": 0.2,
+    "drop_path_rate": 0.1,
+    "match_pretrained_norm": false,
+    "local_timm_name": "",
+    "global_timm_name": "",
+    "fusion": "cross_attention",
+    "fusion_dim": 384,
+    "fusion_layers": 2,
+    "fusion_heads": 8
+  },
+  "train": {
+    "epochs": 30,
+    "batch_size": 32,
+    "accum_steps": 1,
+    "num_workers": 4,
+    "val_num_workers": 2,
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 3,
+    "min_lr_ratio": 0.01,
+    "grad_clip": 1.0,
+    "label_smoothing": 0.1,
+    "loss": "ce",
+    "focal_gamma": 2.0,
+    "class_weight_power": 0.5,
+    "sampler": "none",
+    "ema_decay": 0.999,
+    "early_stop_patience": 7,
+    "monitor": "auto",
+    "amp": true,
+    "grad_checkpointing": false,
+    "seed": 42
+  },
+  "train_class_counts": [
+    22782,
+    408
+  ],
+  "loss_class_weights": [
+    0.23605787754058838,
+    1.7639421224594116
+  ],
+  "max_train": null,
+  "max_val": null
+}

@@ -1,0 +1,29 @@
+Hybrid map (B),Endpoint,Primary,Better,A,B,B − A [95% CI],p,p Holm
+"Grad-CAM, EffNetV2 branch",deletion_auc,,lower,0.4382,0.5270,"+0.0887 [0.0786, 0.0990]",< 0.002,
+"Grad-CAM, EffNetV2 branch",insertion_auc,,higher,0.7113,0.6322,"−0.0791 [−0.0876, −0.0709]",< 0.002,
+"Grad-CAM, EffNetV2 branch",deletion_vs_random,yes,lower,-0.0782,-0.0276,"▼+0.0506 [0.0409, 0.0606]",< 0.002,< 0.024
+"Grad-CAM, EffNetV2 branch",insertion_vs_random,yes,higher,0.0584,0.0315,"▼−0.0269 [−0.0342, −0.0200]",< 0.002,< 0.024
+"Grad-CAM, EffNetV2 branch",rand_full_abs_spearman,,lower,0.2370,0.2153,"−0.0217 [−0.0348, −0.0085]",< 0.002,
+"Grad-CAM, EffNetV2 branch",rand_full_ssim,yes,lower,0.2684,0.2622,"−0.0062 [−0.0146, 0.0022]",0.180,0.360
+"Grad-CAM, EffNetV2 branch",rand_full_abs_hog,,lower,0.0824,0.0583,"−0.0241 [−0.0287, −0.0198]",< 0.002,
+"Grad-CAM, EffNetV2 branch",stab_spearman_mean,yes,higher,0.9382,0.7066,"▼−0.2316 [−0.2455, −0.2184]",< 0.002,< 0.024
+"Grad-CAM, EffNetV2 branch",stab_ssim_mean,,higher,0.9256,0.7023,"−0.2233 [−0.2316, −0.2153]",< 0.002,
+"Grad-CAM, EffNetV2 branch",iou,yes,higher,0.3147,0.4986,"▲+0.1839 [0.1686, 0.1992]",< 0.002,< 0.024
+"Grad-CAM, EffNetV2 branch",energy_in_mask,,higher,0.5248,0.7155,"+0.1907 [0.1748, 0.2063]",< 0.002,
+"Grad-CAM, EffNetV2 branch",pointing,,higher,0.9055,0.8896,"−0.0160 [−0.0379, 0.0053]",0.160,
+"Grad-CAM, EffNetV2 branch",iou_gap,yes,higher,-0.0315,0.0836,"▲+0.1151 [0.0755, 0.1556]",< 0.002,< 0.024
+"Grad-CAM, EffNetV2 branch",**frozen decision rule**,,,,,**not met**,,
+"Grad-CAM, fused",deletion_auc,,lower,0.4382,0.4791,"+0.0409 [0.0307, 0.0513]",< 0.002,
+"Grad-CAM, fused",insertion_auc,,higher,0.7113,0.6483,"−0.0630 [−0.0710, −0.0548]",< 0.002,
+"Grad-CAM, fused",deletion_vs_random,yes,lower,-0.0782,-0.0754,"+0.0027 [−0.0067, 0.0120]",0.640,0.640
+"Grad-CAM, fused",insertion_vs_random,yes,higher,0.0584,0.0477,"▼−0.0108 [−0.0172, −0.0038]",0.002,0.008
+"Grad-CAM, fused",rand_full_abs_spearman,,lower,0.2370,0.1944,"−0.0426 [−0.0543, −0.0300]",< 0.002,
+"Grad-CAM, fused",rand_full_ssim,yes,lower,0.2684,0.2917,"▼+0.0232 [0.0109, 0.0352]",< 0.002,< 0.024
+"Grad-CAM, fused",rand_full_abs_hog,,lower,0.0824,0.0569,"−0.0255 [−0.0298, −0.0211]",< 0.002,
+"Grad-CAM, fused",stab_spearman_mean,yes,higher,0.9382,0.8916,"▼−0.0466 [−0.0529, −0.0406]",< 0.002,< 0.024
+"Grad-CAM, fused",stab_ssim_mean,,higher,0.9256,0.9751,"+0.0495 [0.0470, 0.0520]",< 0.002,
+"Grad-CAM, fused",iou,yes,higher,0.3147,0.4369,"▲+0.1222 [0.1098, 0.1327]",< 0.002,< 0.024
+"Grad-CAM, fused",energy_in_mask,,higher,0.5248,0.4593,"−0.0655 [−0.0749, −0.0569]",< 0.002,
+"Grad-CAM, fused",pointing,,higher,0.9055,0.8483,"−0.0572 [−0.0799, −0.0359]",< 0.002,
+"Grad-CAM, fused",iou_gap,yes,higher,-0.0315,-0.0712,"−0.0397 [−0.0802, 0.0024]",0.068,0.204
+"Grad-CAM, fused",**frozen decision rule**,,,,,**not met**,,

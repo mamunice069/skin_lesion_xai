@@ -1,0 +1,54 @@
+{
+  "stage": "lambda",
+  "rule": "val macro-F1 >= 0.8289, then max insertion_vs_random (gradcam_fused, 3 decimals), ties by stab_spearman_mean",
+  "source": {
+    "run": "ham10000_hybrid",
+    "val_macro_f1": 0.8388842941037414,
+    "best_epoch": 10,
+    "n_screen": 300,
+    "insertion_vs_random": 0.047230398828784624,
+    "deletion_vs_random": -0.07651763800531626,
+    "stab_spearman_mean": 0.89622456728018,
+    "rand_full_ssim": 0.3014438505983747,
+    "iou": 0.41019855151368767
+  },
+  "candidates": [
+    {
+      "run": "ham10000_hybrid_mask_l0.1_m0",
+      "val_macro_f1": 0.8367131212854663,
+      "best_epoch": 4,
+      "n_screen": 300,
+      "insertion_vs_random": 0.04935383881131808,
+      "deletion_vs_random": -0.07170965833589435,
+      "stab_spearman_mean": 0.9551053533935192,
+      "rand_full_ssim": 0.3042784079915617,
+      "iou": 0.5184670325987539,
+      "eligible": true
+    },
+    {
+      "run": "ham10000_hybrid_mask_l0.3_m0",
+      "val_macro_f1": 0.8256627121924617,
+      "best_epoch": 3,
+      "n_screen": 300,
+      "insertion_vs_random": 0.045407516409953434,
+      "deletion_vs_random": -0.03366672683507204,
+      "stab_spearman_mean": 0.9412277557403665,
+      "rand_full_ssim": 0.35547561355787505,
+      "iou": 0.19598396948683594,
+      "eligible": false
+    },
+    {
+      "run": "ham10000_hybrid_mask_l1_m0",
+      "val_macro_f1": 0.81657198792461,
+      "best_epoch": 1,
+      "n_screen": 300,
+      "insertion_vs_random": 0.04099702154596647,
+      "deletion_vs_random": -0.044332758039236066,
+      "stab_spearman_mean": 0.8463819280469917,
+      "rand_full_ssim": 0.3278916909989683,
+      "iou": 0.2625202075228603,
+      "eligible": false
+    }
+  ],
+  "chosen": "ham10000_hybrid_mask_l0.1_m0"
+}

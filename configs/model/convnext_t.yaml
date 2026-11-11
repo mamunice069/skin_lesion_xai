@@ -1,0 +1,6 @@
+# Baseline (proposal slide 9): ConvNeXt-Tiny, ImageNet-22k pretrained, fine-tuned on 1k.
+name: convnext_t
+arch: timm
+timm_name: convnext_tiny.fb_in22k_ft_in1k
+drop_rate: 0.2
+drop_path_rate: 0.1

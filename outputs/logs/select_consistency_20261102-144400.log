@@ -1,0 +1,6 @@
+                           run  val_macro_f1  best_epoch  n_screen  insertion_vs_random  deletion_vs_random  stab_spearman_mean  rand_full_ssim      iou eligible
+               ham10000_hybrid      0.838884          10       300             0.047230           -0.076518            0.896225        0.301444 0.410199   source
+  ham10000_hybrid_mask_l0.1_m0      0.836713           4       300             0.049354           -0.071710            0.955105        0.304278 0.518467     True
+ham10000_hybrid_mask_l0.1_m0.1      0.810226           3       300             0.059291           -0.108550            0.954913        0.264477 0.558727    False
+  ham10000_hybrid_mask_l0.1_m1      0.814317           4       300             0.035590           -0.066141            0.928410        0.251261 0.406011    False
+chosen: ham10000_hybrid_mask_l0.1_m0  -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\comparisons\ham10000_mask_guided_consistency.json

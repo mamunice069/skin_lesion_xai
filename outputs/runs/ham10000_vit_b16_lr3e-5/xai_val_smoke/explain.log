@@ -1,0 +1,4 @@
+2026-11-01 12:16:17,587 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_lr3e-5\best.pt (epoch 16)
+2026-11-01 12:16:18,898 | INFO | explain | batch 1/8  GPU peak 0.56 / 4.00 GiB
+2026-11-01 12:16:20,483 | INFO | explain | 61 images, maps {'gradcam@pred': [14, 14], 'gradcam@true': [14, 14], 'rollout@none': [14, 14]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_lr3e-5\xai_val_smoke\maps.npz
+2026-11-01 12:16:23,455 | INFO | explain | 12 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_lr3e-5\xai_val_smoke\figures

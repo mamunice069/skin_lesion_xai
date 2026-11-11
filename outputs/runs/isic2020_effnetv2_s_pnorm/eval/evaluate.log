@@ -1,0 +1,2 @@
+2026-11-03 17:09:31,261 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_effnetv2_s_pnorm\best.pt (epoch 5, val auc 0.8852)
+2026-11-03 17:13:21,441 | INFO | evaluate | test n=4967  acc 0.9772  bal_acc 0.6078  macro_f1 0.6249  auc 0.8946  mcc 0.2537 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_effnetv2_s_pnorm\eval

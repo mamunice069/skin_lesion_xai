@@ -1,0 +1,5 @@
+Comparison,Map (B),n val / test,deletion_vs_random,insertion_vs_random,rand_full_ssim,stab_spearman_mean,iou,iou_gap,Rule val / test
+(d) mask-guided vs hybrid,"Grad-CAM, EffNetV2 branch",1503 / 1503,−0.008 / ▲−0.012,▲+0.009 / ▲+0.008,▼+0.017 / ▼+0.018,▲+0.164 / ▲+0.162,▲+0.056 / ▲+0.052,−0.016 / +0.015,not met / not met
+(d) mask-guided vs hybrid,"Grad-CAM, fused",1503 / 1503,▼+0.021 / ▼+0.020,+0.002 / +0.004,+0.004 / +0.006,▲+0.066 / ▲+0.064,▲+0.103 / ▲+0.089,▲+0.058 / +0.047,not met / not met
+(e) mask-guided vs ConvNeXt-T,"Grad-CAM, EffNetV2 branch",1503 / 1503,▼+0.035 / ▼+0.039,▼−0.025 / ▼−0.019,▼+0.015 / ▼+0.012,▼−0.073 / ▼−0.070,▲+0.235 / ▲+0.236,▲+0.152 / ▲+0.130,not met / not met
+(e) mask-guided vs ConvNeXt-T,"Grad-CAM, fused",1503 / 1503,▼+0.019 / ▼+0.023,▼−0.015 / −0.007,▼+0.032 / ▼+0.030,▲+0.018 / ▲+0.018,▲+0.215 / ▲+0.211,▲+0.061 / +0.007,not met / not met

@@ -1,0 +1,3 @@
+2026-11-03 14:43:37,635 | INFO | explain_randomised | gradcam_local: mean Spearman 0.217, SSIM 0.410 over 14 images
+2026-11-03 14:43:37,635 | INFO | explain_randomised | gradcam_fused: mean Spearman 0.025, SSIM 0.260 over 14 images
+2026-11-03 14:43:37,635 | INFO | explain_randomised | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_test_randomised_examples

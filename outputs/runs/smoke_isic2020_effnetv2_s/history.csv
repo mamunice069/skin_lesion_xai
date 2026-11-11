@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,val_accuracy,val_balanced_accuracy,val_macro_f1,val_auc,val_mcc,lr_backbone,seconds,gpu_peak
+1,0.8551878643035888,0.8337991857528686,0.98,0.5,0.494949494949495,0.5510204081632653,0.0,3.809523809523809e-05,15.0,0.50 / 4.00 GiB

@@ -1,0 +1,8 @@
+# vit_b16.yaml with the checkpoint's own input normalisation (mean = std = 0.5).
+# Trained with --backbone-lr 3e-5 (see docs/report_notes.md, Baselines).
+name: vit_b16_pnorm
+arch: timm
+timm_name: vit_base_patch16_224.augreg2_in21k_ft_in1k
+match_pretrained_norm: true
+drop_rate: 0.2
+drop_path_rate: 0.1

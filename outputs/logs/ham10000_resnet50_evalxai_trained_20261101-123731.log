@@ -1,0 +1,30 @@
+12:37:38 | INFO | eval_xai | scored 64/1503 images
+12:37:40 | INFO | eval_xai | scored 128/1503 images
+12:37:43 | INFO | eval_xai | scored 192/1503 images
+12:37:45 | INFO | eval_xai | scored 256/1503 images
+12:37:48 | INFO | eval_xai | scored 320/1503 images
+12:37:50 | INFO | eval_xai | scored 384/1503 images
+12:37:53 | INFO | eval_xai | scored 448/1503 images
+12:37:56 | INFO | eval_xai | scored 512/1503 images
+12:37:58 | INFO | eval_xai | scored 576/1503 images
+12:38:01 | INFO | eval_xai | scored 640/1503 images
+12:38:04 | INFO | eval_xai | scored 704/1503 images
+12:38:07 | INFO | eval_xai | scored 768/1503 images
+12:38:10 | INFO | eval_xai | scored 832/1503 images
+12:38:13 | INFO | eval_xai | scored 896/1503 images
+12:38:15 | INFO | eval_xai | scored 960/1503 images
+12:38:18 | INFO | eval_xai | scored 1024/1503 images
+12:38:21 | INFO | eval_xai | scored 1088/1503 images
+12:38:23 | INFO | eval_xai | scored 1152/1503 images
+12:38:26 | INFO | eval_xai | scored 1216/1503 images
+12:38:29 | INFO | eval_xai | scored 1280/1503 images
+12:38:31 | INFO | eval_xai | scored 1344/1503 images
+12:38:34 | INFO | eval_xai | scored 1408/1503 images
+12:38:37 | INFO | eval_xai | scored 1472/1503 images
+12:38:38 | INFO | eval_xai | scored 1503/1503 images
+12:38:39 | INFO | eval_xai | map (all images)                    IoU   Dice IoU-AUC  boxIoU  point  E-mask  E-band
+12:38:39 | INFO | eval_xai | gradcam@pred                      0.533  0.680   0.286   0.599  0.968   0.711   0.133
+12:38:39 | INFO | eval_xai | gradcam@true                      0.506  0.650   0.270   0.577  0.935   0.683   0.135
+12:38:39 | INFO | eval_xai | ref_centre@none                   0.487  0.615   0.389   0.550  0.961   0.603   0.137
+12:38:39 | INFO | eval_xai | ref_uniform@none                  0.418  0.545   0.418   0.544    nan   0.418   0.130
+12:38:39 | INFO | eval_xai | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_resnet50\xai_val

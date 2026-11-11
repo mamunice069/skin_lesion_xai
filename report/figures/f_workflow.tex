@@ -1,0 +1,43 @@
+% Workflow of the study (drawn by hand; no results). Used inside a figure* via \input{figures/f_workflow}.
+% Style names avoid TikZ's own keys (the earlier "step" clashed with the grid key and the figure did not render).
+\begin{tikzpicture}[
+    font=\footnotesize, >={Stealth[length=4pt]}, node distance=3mm and 5mm,
+    wfbox/.style={draw, rounded corners=3pt, align=center, minimum height=13mm, text width=24mm, inner sep=3pt},
+    wfnum/.style={circle, fill=secteal, text=white, font=\scriptsize\bfseries, inner sep=1.2pt},
+    wfa/.style={wfbox, fill=teal!10},
+    wfb/.style={wfbox, fill=orange!12},
+    wfc/.style={wfbox, fill=gray!10},
+]
+  % row 1: classification
+  \node[wfa] (s1) {\textbf{Data}\\HAM10000, ISIC 2020\\lesion / patient-grouped 70/15/15 split};
+  \node[wfa, right=of s1] (s2) {\textbf{Preprocessing}\\augmentation; optional DullRazor hair removal};
+  \node[wfa, right=of s2] (s3) {\textbf{Models}\\hybrid (cross-attn.), concat, single branches, 4 baselines};
+  \node[wfa, right=of s3] (s4) {\textbf{Training}\\AdamW, EMA, early stopping on validation};
+  \node[wfa, right=of s4] (s5) {\textbf{Classification test}\\once per model; paired bootstrap, Holm};
+  % row 2: explanations
+  \node[wfb, below=7mm of s5] (s6) {\textbf{Explanation maps}\\Grad-CAM local / fused, attention};
+  \node[wfb, left=of s6] (s7) {\textbf{Localisation}\\IoU, pointing, energy vs lesion masks};
+  \node[wfb, left=of s7] (s8) {\textbf{Trust protocol}\\faithfulness, randomisation, stability};
+  \node[wfb, left=of s8] (s9) {\textbf{Frozen rule}\\fixed on validation, test run once};
+  \node[wfc, left=of s9] (s10) {\textbf{Exploratory}\\SmoothGrad-CAM, Score-CAM, mask-guided tuning};
+
+  \draw[->] (s1) -- (s2);
+  \draw[->] (s2) -- (s3);
+  \draw[->] (s3) -- (s4);
+  \draw[->] (s4) -- (s5);
+  \draw[->] (s5) -- (s6);
+  \draw[->] (s6) -- (s7);
+  \draw[->] (s7) -- (s8);
+  \draw[->] (s8) -- (s9);
+  \draw[->] (s9) -- (s10);
+  \node[wfnum] at (s1.north west) {1};
+  \node[wfnum] at (s2.north west) {2};
+  \node[wfnum] at (s3.north west) {3};
+  \node[wfnum] at (s4.north west) {4};
+  \node[wfnum] at (s5.north west) {5};
+  \node[wfnum] at (s6.north west) {6};
+  \node[wfnum] at (s7.north west) {7};
+  \node[wfnum] at (s8.north west) {8};
+  \node[wfnum] at (s9.north west) {9};
+  \node[wfnum] at (s10.north west) {10};
+\end{tikzpicture}

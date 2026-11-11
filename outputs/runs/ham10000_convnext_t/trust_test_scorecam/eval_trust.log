@@ -1,0 +1,9 @@
+2026-11-03 09:47:28,013 | INFO | eval_trust | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\best.pt (epoch 16); method scorecam, maps ['gradcam']
+2026-11-03 09:49:36,636 | INFO | eval_trust | batch 1/10  maps 24s  stability 95s  faithfulness 10s  GPU peak 0.70 / 4.00 GiB
+2026-11-03 10:11:13,460 | INFO | eval_trust | randomised full (head, stages.3, stages.2, stages.1, stages.0, stem): 224s
+2026-11-03 10:11:13,495 | INFO | eval_trust | map             del AUC   ins AUC stab rho stab SSIM  rand rho rand SSIM
+2026-11-03 10:11:13,497 | INFO | eval_trust | gradcam           0.542     0.696    0.710     0.816     0.004     0.430
+2026-11-03 10:11:13,497 | INFO | eval_trust | ref_centre        0.525     0.684       -        -        -        -
+2026-11-03 10:11:13,497 | INFO | eval_trust | ref_random        0.501     0.632       -        -        -        -
+2026-11-03 10:11:13,497 | INFO | eval_trust | seconds: {'maps': 222.1, 'stability': 889.1, 'faithfulness': 89.0, 'randomisation_full': 224.2}
+2026-11-03 10:11:13,499 | INFO | eval_trust | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t\trust_test_scorecam

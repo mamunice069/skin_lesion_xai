@@ -1,0 +1,3 @@
+2026-11-01 12:29:59,516 | INFO | explain | random weights (no checkpoint loaded)
+2026-11-01 12:30:01,131 | INFO | explain | batch 1/8  GPU peak 0.35 / 4.00 GiB
+2026-11-01 12:30:02,627 | INFO | explain | 61 images, maps {'gradcam_local@pred': [7, 7], 'gradcam_global@pred': [7, 7], 'gradcam_fused@pred': [7, 7], 'gradcam_local@true': [7, 7], 'gradcam_global@true': [7, 7], 'gradcam_fused@true': [7, 7], 'xattn_local_to_global@none': [7, 7], 'xattn_global_to_local@none': [7, 7]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\xai_val_random_smoke\maps.npz

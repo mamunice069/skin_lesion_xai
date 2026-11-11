@@ -1,0 +1,9 @@
+B − A (hybrid − EfficientNetV2-S),A,B,Diff [95% CI],p
+AUC,0.8946,0.8991,"+0.004 [−0.013, 0.022]",0.662
+Average precision,0.2175,0.2419,"+0.024 [−0.022, 0.064]",0.390
+Specificity at sens ≥ 0.80 cutoff,0.7946,0.8680,"+0.073 [0.063, 0.083]",< 0.002
+Sensitivity at sens ≥ 0.80 cutoff,0.8090,0.7303,"−0.079 [−0.151, −0.011]",0.040
+Specificity at Youden,0.7181,0.8573,"+0.139 [0.128, 0.151]",< 0.002
+Sensitivity at Youden,0.8876,0.7303,"−0.157 [−0.244, −0.082]",< 0.002
+Specificity at argmax,0.9910,0.9910,"+0.000 [−0.003, 0.002]",1.000
+Sensitivity at argmax,0.2247,0.2135,"−0.011 [−0.078, 0.060]",0.908

@@ -1,0 +1,10 @@
+2026-11-01 19:33:31,347 | INFO | compare_paired | test n=4967 (89 positive), 1000 paired resamples: B = isic2020_hybrid minus A = isic2020_convnext_t
+2026-11-01 19:33:31,347 | INFO | compare_paired | auc                            A 0.8906 [0.8647, 0.9161]  B 0.8991 [0.8741, 0.9232]  B-A +0.0086 [-0.0112, +0.0276]  p 0.362
+2026-11-01 19:33:31,347 | INFO | compare_paired | average_precision              A 0.2009 [0.1247, 0.2961]  B 0.2419 [0.1552, 0.3360]  B-A +0.0410 [-0.0109, +0.0908]  p 0.134
+2026-11-01 19:33:31,347 | INFO | compare_paired | argmax_sensitivity             A 0.2135 [0.1290, 0.3039]  B 0.2135 [0.1263, 0.3044]  B-A +0.0000 [-0.0745, +0.0748]  p 1.000
+2026-11-01 19:33:31,358 | INFO | compare_paired | argmax_specificity             A 0.9883 [0.9851, 0.9912]  B 0.9910 [0.9883, 0.9936]  B-A +0.0027 [+0.0000, +0.0055]  p 0.068
+2026-11-01 19:33:31,358 | INFO | compare_paired | youden_sensitivity             A 0.8539 [0.7763, 0.9247]  B 0.7303 [0.6410, 0.8228]  B-A -0.1236 [-0.2188, -0.0244]  p 0.016
+2026-11-01 19:33:31,359 | INFO | compare_paired | youden_specificity             A 0.7956 [0.7845, 0.8067]  B 0.8573 [0.8476, 0.8670]  B-A +0.0617 [+0.0521, +0.0715]  p 0.000
+2026-11-01 19:33:31,359 | INFO | compare_paired | sensitivity_0.80_sensitivity   A 0.8090 [0.7158, 0.8900]  B 0.7303 [0.6410, 0.8228]  B-A -0.0787 [-0.1839, +0.0313]  p 0.214
+2026-11-01 19:33:31,359 | INFO | compare_paired | sensitivity_0.80_specificity   A 0.8255 [0.8155, 0.8359]  B 0.8680 [0.8590, 0.8772]  B-A +0.0424 [+0.0341, +0.0512]  p 0.000
+2026-11-01 19:33:31,359 | INFO | compare_paired | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\comparisons\isic2020_test_isic2020_hybrid_vs_isic2020_convnext_t.json

@@ -1,0 +1,5 @@
+label_name,train,val,test
+benign,22782,4882,4878
+melanoma,408,87,89
+total images,23190,4969,4967
+groups (lesions/patients),1440,309,307

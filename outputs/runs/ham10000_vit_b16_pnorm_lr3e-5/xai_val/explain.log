@@ -1,0 +1,8 @@
+2026-11-01 13:03:18,437 | INFO | explain | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_pnorm_lr3e-5\best.pt (epoch 8)
+2026-11-01 13:03:20,255 | INFO | explain | batch 1/94  GPU peak 0.80 / 4.00 GiB
+2026-11-01 13:03:30,026 | INFO | explain | batch 21/94  GPU peak 0.80 / 4.00 GiB
+2026-11-01 13:03:39,886 | INFO | explain | batch 41/94  GPU peak 0.80 / 4.00 GiB
+2026-11-01 13:03:49,580 | INFO | explain | batch 61/94  GPU peak 0.80 / 4.00 GiB
+2026-11-01 13:03:58,945 | INFO | explain | batch 81/94  GPU peak 0.80 / 4.00 GiB
+2026-11-01 13:04:05,077 | INFO | explain | 1503 images, maps {'gradcam@pred': [14, 14], 'gradcam@true': [14, 14], 'rollout@none': [14, 14]} -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_pnorm_lr3e-5\xai_val\maps.npz
+2026-11-01 13:04:09,370 | INFO | explain | 14 figures -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_vit_b16_pnorm_lr3e-5\xai_val\figures

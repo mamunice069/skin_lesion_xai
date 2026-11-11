@@ -1,0 +1,99 @@
+{
+  "run_name": "ham10000_resnet50",
+  "smoke": false,
+  "data_config": "configs/data/ham10000.yaml",
+  "model_config": "configs/model/resnet50.yaml",
+  "data": {
+    "name": "ham10000",
+    "task": "multiclass",
+    "data_root": "..",
+    "image_dir": "ISIC/diagnosis_confirm_type",
+    "metadata_csv": "datasets/ham10000_extra/HAM10000_metadata.csv",
+    "id_col": "image_id",
+    "label_col": "dx",
+    "group_col": "lesion_id",
+    "classes": [
+      "akiec",
+      "bcc",
+      "bkl",
+      "df",
+      "mel",
+      "nv",
+      "vasc"
+    ],
+    "split_csv": "data/splits/ham10000.csv",
+    "mask_dir": "datasets/ham10000_extra/masks",
+    "mask_suffix": "_segmentation.png",
+    "image_ext": ".jpg",
+    "split_ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "split_folds": 20,
+    "seed": 42,
+    "hair_removed_dir": "data/processed/ham10000_dullrazor",
+    "use_hair_removal": false,
+    "dullrazor": {
+      "kernel_size": 17,
+      "threshold": 12,
+      "min_length_frac": 0.08,
+      "min_elongation": 8.0,
+      "dilate": 1,
+      "inpaint_radius": 3
+    },
+    "image_size": 224
+  },
+  "model": {
+    "name": "resnet50",
+    "arch": "timm",
+    "timm_name": "resnet50.a1_in1k",
+    "pretrained": true,
+    "drop_rate": 0.2,
+    "drop_path_rate": 0.05
+  },
+  "train": {
+    "epochs": 30,
+    "batch_size": 8,
+    "accum_steps": 4,
+    "num_workers": 1,
+    "val_num_workers": 0,
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 3,
+    "min_lr_ratio": 0.01,
+    "grad_clip": 1.0,
+    "label_smoothing": 0.1,
+    "loss": "ce",
+    "focal_gamma": 2.0,
+    "class_weight_power": 0.5,
+    "sampler": "none",
+    "ema_decay": 0.999,
+    "early_stop_patience": 7,
+    "monitor": "auto",
+    "amp": true,
+    "grad_checkpointing": true,
+    "seed": 42
+  },
+  "train_class_counts": [
+    228,
+    359,
+    769,
+    80,
+    779,
+    4694,
+    100
+  ],
+  "loss_class_weights": [
+    1.1109360456466675,
+    0.8853382468223572,
+    0.6049135327339172,
+    1.8754758834838867,
+    0.6010183691978455,
+    0.24484144151210785,
+    1.6774765253067017
+  ],
+  "max_train": null,
+  "max_val": null
+}

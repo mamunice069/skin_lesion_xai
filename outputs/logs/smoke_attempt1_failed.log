@@ -1,0 +1,81 @@
+=== smoke_ham10000_resnet50
+E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Asus\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Asus\.cache\huggingface\hub\models--timm--resnet50.a1_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+22:27:09 | INFO | train.smoke_ham10000_resnet50 | train 200 / val 99 samples, 7 optimizer steps per epoch, effective batch 32, monitor macro_f1
+fatal   : Memory allocation failure
+fatal   : Memory allocation failure
+fatal   : Memory allocation failure
+fatal   : Memory allocation failure
+Traceback (most recent call last):
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\scripts\train.py", line 91, in <module>
+    main()
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\scripts\train.py", line 85, in main
+    summary = trainer.fit(train_loader, val_loader)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\src\skin_lesion_xai\train\trainer.py", line 125, in fit
+    train_loss = self._train_epoch(train_loader, scheduler)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\src\skin_lesion_xai\train\trainer.py", line 89, in _train_epoch
+    logits = self.model(x)
+             ^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\timm\models\resnet.py", line 779, in forward
+    x = self.forward_features(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\timm\models\resnet.py", line 748, in forward_features
+    x = self.conv1(x)
+        ^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\nn\modules\conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: GET was unable to find an engine to execute this computation
+=== smoke_ham10000_convnext_t
+E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Asus\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\Asus\.cache\huggingface\hub\models--timm--convnext_tiny.fb_in22k_ft_in1k. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+22:28:31 | INFO | train.smoke_ham10000_convnext_t | train 200 / val 99 samples, 7 optimizer steps per epoch, effective batch 32, monitor macro_f1
+E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\optim\lr_scheduler.py:227: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\Asus\AppData\Local\Python\pythoncore-3.11-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Python\pythoncore-3.11-64\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "C:\Users\Asus\AppData\Local\Python\pythoncore-3.11-64\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "C:\Users\Asus\AppData\Local\Python\pythoncore-3.11-64\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\scripts\train.py", line 15, in <module>
+    from torch.utils.data import DataLoader
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\__init__.py", line 274, in <module>
+    _load_dll_libraries()
+  File "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\__init__.py", line 257, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] A dynamic link library (DLL) initialization routine failed. Error loading "E:\claude-work\Deep_learning\skin_lesion_xai\.venv\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.

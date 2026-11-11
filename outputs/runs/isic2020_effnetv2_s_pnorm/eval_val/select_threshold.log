@@ -1,0 +1,5 @@
+2026-11-03 17:09:16,950 | INFO | select_threshold | isic2020_effnetv2_s_pnorm, val n=4969 (87 melanoma), checkpoint epoch 5
+2026-11-03 17:09:16,950 | INFO | select_threshold | cutoff             threshold  called+   sens   spec bal_acc    F1+    MCC
+2026-11-03 17:09:16,950 | INFO | select_threshold | youden                0.3109     1334  0.885  0.743   0.814  0.108  0.186
+2026-11-03 17:09:16,950 | INFO | select_threshold | sensitivity_0.80      0.3222      982  0.805  0.813   0.809  0.131  0.203
+2026-11-03 17:09:16,950 | INFO | select_threshold | -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_effnetv2_s_pnorm\eval_val\threshold.json (val metrics at a val-chosen cutoff are optimistic)

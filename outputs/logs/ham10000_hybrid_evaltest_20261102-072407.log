@@ -1,0 +1,2 @@
+07:24:23 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\best.pt (epoch 10, val macro_f1 0.8389)
+07:26:00 | INFO | evaluate | test n=1503  acc 0.8683  bal_acc 0.8027  macro_f1 0.7903  auc 0.9575  mcc 0.7499 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_hybrid\eval

@@ -1,0 +1,2 @@
+2026-11-02 07:33:22,758 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t_hair\best.pt (epoch 19, val macro_f1 0.8527)
+2026-11-02 07:34:32,593 | INFO | evaluate | test n=1503  acc 0.8656  bal_acc 0.8341  macro_f1 0.8006  auc 0.9560  mcc 0.7448 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_convnext_t_hair\eval

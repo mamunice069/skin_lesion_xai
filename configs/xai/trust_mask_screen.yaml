@@ -1,0 +1,25 @@
+# Part B (EXPLORATORY): val-only screening of the mask-guided fine-tuning candidates and of the source hybrid
+# (scripts/eval_trust.py --split val; scripts/select_mask_candidate.py). Grad-CAM, M4 settings, on a fixed
+# stratified 300-image val subset with one-step full randomisation. Never run on test.
+# Frozen 2026-11-02 before any fine-tuning run (docs/report_notes.md, "Part B").
+maps:
+  hybrid: [gradcam_local, gradcam_fused]
+steps: 50
+blur_kernel: 11
+blur_sigma: 5.0
+random_grid: 7
+centre_sigma: 0.25
+noise_std: 0.03
+brightness: [0.9, 1.1]
+stability_unchanged_only: true
+hog_pixels_per_cell: 16
+seed: 0
+batch_size: 16
+forward_batch: 64
+n_boot: 1000
+primary: [deletion_vs_random, insertion_vs_random, rand_full_ssim, stab_spearman_mean, iou, iou_gap]
+method: gradcam
+randomisation: full
+max_samples: 300
+localisation: true
+tag: screen300

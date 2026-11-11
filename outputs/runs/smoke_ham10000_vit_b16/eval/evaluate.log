@@ -1,0 +1,2 @@
+2026-10-28 23:23:38,431 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_vit_b16\best.pt (epoch 1, val macro_f1 0.3051)
+2026-10-28 23:23:43,246 | INFO | evaluate | test n=99  acc 0.6364  bal_acc 0.3605  macro_f1 0.3828  auc 0.7256  mcc 0.2233 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_vit_b16\eval

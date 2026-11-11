@@ -1,0 +1,7 @@
+# Part B (EXPLORATORY) mask-guided fine-tuning of ham10000_hybrid (scripts/finetune_mask.py), layered on
+# configs/train/default.yaml + configs/train/local_4gb.yaml. Frozen 2026-11-02 before any fine-tuning run.
+epochs: 5
+backbone_lr: 1.0e-5        # 1/10 of the original recipe: the model starts from its trained checkpoint
+head_lr: 1.0e-4            # fusion + head
+warmup_epochs: 0
+early_stop_patience: 5     # = epochs: every candidate runs all 5 epochs; best.pt = best val macro-F1 epoch

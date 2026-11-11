@@ -1,0 +1,2 @@
+2026-11-01 19:25:32,916 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_convnext_t\best.pt (epoch 8, val auc 0.9085)
+2026-11-01 19:28:34,093 | INFO | evaluate | test n=4967  acc 0.9744  bal_acc 0.6009  macro_f1 0.6087  auc 0.8906  mcc 0.2181 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\isic2020_convnext_t\eval

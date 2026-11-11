@@ -1,0 +1,3 @@
+2026-11-01 11:26:35,871 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_hybrid_concat\best.pt (epoch 1, val macro_f1 0.1153)
+2026-11-01 11:26:38,815 | INFO | evaluate | val n=99  acc 0.6768  bal_acc 0.1429  macro_f1 0.1153  auc 0.8177  mcc 0.0000 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\smoke_ham10000_hybrid_concat\eval_val
+2026-11-01 11:26:38,815 | INFO | evaluate | val sensitivity: akiec 0.000  bcc 0.000  bkl 0.000  df 0.000  mel 0.000  nv 1.000  vasc 0.000

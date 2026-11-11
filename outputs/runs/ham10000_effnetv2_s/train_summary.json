@@ -1,0 +1,6 @@
+{
+  "best_epoch": 12,
+  "best_val_score": 0.7849728058956239,
+  "monitor": "macro_f1",
+  "epochs_run": 19
+}

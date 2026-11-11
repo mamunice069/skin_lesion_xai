@@ -1,0 +1,16 @@
+23:44:48 | INFO | train.ham10000_swin_t | train 7009 / val 1503 samples, 219 optimizer steps per epoch, effective batch 32, monitor macro_f1
+23:48:17 | INFO | train.ham10000_swin_t | epoch 1/30  train_loss 1.8443  val_loss 1.5734  val_macro_f1 0.5742  *best*  (208s, GPU peak 0.70 / 4.00 GiB)
+23:51:00 | INFO | train.ham10000_swin_t | epoch 2/30  train_loss 1.5132  val_loss 1.4859  val_macro_f1 0.7489  *best*  (162s, GPU peak 0.70 / 4.00 GiB)
+23:54:14 | INFO | train.ham10000_swin_t | epoch 3/30  train_loss 1.4560  val_loss 1.4692  val_macro_f1 0.7663  *best*  (193s, GPU peak 0.70 / 4.00 GiB)
+23:57:28 | INFO | train.ham10000_swin_t | epoch 4/30  train_loss 1.3743  val_loss 1.4514  val_macro_f1 0.7798  *best*  (193s, GPU peak 0.70 / 4.00 GiB)
+00:00:43 | INFO | train.ham10000_swin_t | epoch 5/30  train_loss 1.3171  val_loss 1.4255  val_macro_f1 0.7872  *best*  (194s, GPU peak 0.70 / 4.00 GiB)
+00:03:55 | INFO | train.ham10000_swin_t | epoch 6/30  train_loss 1.2903  val_loss 1.4157  val_macro_f1 0.8255  *best*  (192s, GPU peak 0.70 / 4.00 GiB)
+00:07:06 | INFO | train.ham10000_swin_t | epoch 7/30  train_loss 1.2565  val_loss 1.4241  val_macro_f1 0.7998  (190s, GPU peak 0.70 / 4.00 GiB)
+00:10:19 | INFO | train.ham10000_swin_t | epoch 8/30  train_loss 1.2163  val_loss 1.4255  val_macro_f1 0.7978  (192s, GPU peak 0.70 / 4.00 GiB)
+00:13:34 | INFO | train.ham10000_swin_t | epoch 9/30  train_loss 1.1836  val_loss 1.4181  val_macro_f1 0.8134  (195s, GPU peak 0.70 / 4.00 GiB)
+00:16:47 | INFO | train.ham10000_swin_t | epoch 10/30  train_loss 1.1582  val_loss 1.4167  val_macro_f1 0.8082  (193s, GPU peak 0.70 / 4.00 GiB)
+00:20:02 | INFO | train.ham10000_swin_t | epoch 11/30  train_loss 1.1235  val_loss 1.4186  val_macro_f1 0.8156  (194s, GPU peak 0.70 / 4.00 GiB)
+00:23:16 | INFO | train.ham10000_swin_t | epoch 12/30  train_loss 1.1111  val_loss 1.4226  val_macro_f1 0.8038  (193s, GPU peak 0.70 / 4.00 GiB)
+00:26:28 | INFO | train.ham10000_swin_t | epoch 13/30  train_loss 1.1069  val_loss 1.4239  val_macro_f1 0.8235  (192s, GPU peak 0.70 / 4.00 GiB)
+00:26:28 | INFO | train.ham10000_swin_t | early stopping: no improvement for 7 epochs
+00:26:28 | INFO | train.ham10000_swin_t | done: {'best_epoch': 6, 'best_val_score': 0.8254748807458856, 'monitor': 'macro_f1', 'epochs_run': 13}

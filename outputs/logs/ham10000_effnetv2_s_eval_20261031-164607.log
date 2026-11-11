@@ -1,0 +1,2 @@
+16:46:19 | INFO | evaluate | loaded E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_effnetv2_s\best.pt (epoch 12, val macro_f1 0.7850)
+16:47:14 | INFO | evaluate | test n=1503  acc 0.8516  bal_acc 0.7927  macro_f1 0.7563  auc 0.9609  mcc 0.7184 -> E:\claude-work\Deep_learning\skin_lesion_xai\outputs\runs\ham10000_effnetv2_s\eval

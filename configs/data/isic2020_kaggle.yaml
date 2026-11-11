@@ -1,0 +1,27 @@
+# isic2020.yaml with the image locations of the Kaggle copy (private dataset "isic2020-256-local", an
+# unchanged upload of datasets/isic2020/). Used only by kaggle/run_isic2020.py; everything that defines the
+# data (name, classes, split CSV, image size) is identical, so runs are named and evaluated as isic2020.
+# Evaluate such a run here with: scripts/evaluate.py --run <run> --data configs/data/isic2020.yaml
+name: isic2020
+task: binary
+data_root: /kaggle/input/isic2020-256-local
+image_dir: images                               # 256x256 JPGs
+metadata_csv: train-metadata.csv
+mask_dir: null
+image_ext: .jpg
+
+id_col: isic_id
+label_col: target                               # 0 = benign, 1 = melanoma
+group_col: patient_id
+classes: [benign, melanoma]
+
+split_csv: data/splits/isic2020.csv
+split_ratios: {train: 0.70, val: 0.15, test: 0.15}
+split_folds: 20
+seed: 42
+
+hair_removed_dir: data/processed/isic2020_dullrazor
+use_hair_removal: false
+dullrazor: {kernel_size: 11, threshold: 12, min_length_frac: 0.08, min_elongation: 8.0, dilate: 1, inpaint_radius: 2}
+
+image_size: 224
