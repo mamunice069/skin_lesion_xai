@@ -1,9 +1,4 @@
-# ইউজারের নির্দেশ অনুযায়ী এই ২টি ফাইল বাদ দেওয়া হলো
-/PYCHARM_GUIDE_BN.md
-/README.md
-report/README.md
-
-# ভার্চুয়াল এনভায়রনমেন্ট ও ক্যাশ
+# 
 .venv/
 __pycache__/
 *.pyc
@@ -11,7 +6,7 @@ __pycache__/
 .idea/
 *.egg-info/
 
-# ১০০ MB-এর বড় ফাইল ও ক্যাশ ছবি (GitHub লিমিট এড়াতে)
+# 
 *.pt
 *.pth
 *.npz
