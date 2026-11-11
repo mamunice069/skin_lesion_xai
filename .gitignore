@@ -17,3 +17,5 @@ __pycache__/
 *.npz
 data/processed/
 outputs/report_overleaf.zip
+
+outputs/kaggle_upload/isic2020-256-local.zip
